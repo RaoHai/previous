@@ -15,6 +15,7 @@
     	"ejs-locals": "~1.0.2",
     	"glob":"3.2.6",
     	"methods":"0.0.1",
+    	"mongodb":"",
     	"path": "0.4.9"
 	}
 }
