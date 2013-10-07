@@ -23,10 +23,4 @@ app.configure ->
     	next()
   	app.use app.router
   	
-  	console.log rainbow
-
-	rainbow.route(app, {  
-	    controllers: '/controllers/',
-	    filters:'/filters/',      
-	    template:'/views/'   
-	  })
+rainbow.route app 
