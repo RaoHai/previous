@@ -39,16 +39,18 @@
     <div class="row collapse">
       <div class="columns large-8">
         <div class="content">
-          
+           <% _.each(posts, function (post) { %>
+
+           
           <div class="post">
             <div class="post-title">
               <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
               <h2 class="entry-title">
-                Hello World
+               <%= post.title %>
               </h2>
               <div class="post-meta">
                 <ul>
-                  <li>Sep 10</li>
+                  <li><%= fmtDate(post.date,"MMM Do") %></li>
                   <li class="divider">/</li>
                   <li>Demo</li>
                   <li class="divider">/</li>
@@ -62,7 +64,7 @@
             </div>
             <div class="entry-container">
               <div class="entry-content">
-                <p>Hello world</p>
+                <p><%- post.text %></p>
 
                 <footer class="entry-meta clearfix">
                   <ul class="tags">
@@ -79,7 +81,7 @@
             </div>
           </div>
           <!-- end post -->
-
+          <% }) %>
 
         </div>
       </div>
