@@ -1,6 +1,2 @@
-require ("coffee-script");
-var server = require ("./index.coffee")
-
-require('http').createServer(server).listen(server.get("port"),function(){
-    console.log("Express server listening on port " + server.get("port"));
- });
+// Start sails and pass it command line arguments
+require('sails').lift(require('optimist').argv);
