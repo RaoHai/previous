@@ -1,9 +1,16 @@
+moment = require 'moment'
 
 PostsController = 
 	create : (req, res)->
-		res.send "Create new Post"
+		Posts.create
+			title : req.param 'title'
+			ident : req.param 'ident'
+			date : moment()
+			text : req.param 'text'
+		.done (err, post) ->
+			res.send post
 		
-	index : (req, res)->
+	find : (req, res)->
 		res.send "hello world"
 
 	new : (req, res)->
