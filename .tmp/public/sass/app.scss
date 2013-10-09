@@ -171,10 +171,21 @@ body{
           background: none repeat scroll 0 0 #FFFFFF;
           .entry-content{
             padding: 35px 50px;
+            h1{
+              font-size: 2em;
+            }
+            h2{
+              font-size: 1.3em;
+              margin-bottom: 0.4em;
+            }
             p{
               font-size: 18px;
               line-height: 36px;
               color: #525252;
+            }
+            textarea{
+              height: 300px;
+              resize:none;
             }
             .entry-meta{
               bottom: 20px;

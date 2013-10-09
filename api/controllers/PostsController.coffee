@@ -1,11 +1,14 @@
 
-
-PostController = 
+PostsController = 
+	create : (req, res)->
+		res.send "Create new Post"
+		
 	index : (req, res)->
-		res.send "Post index"
+		res.send "hello world"
 
 	new : (req, res)->
-		res.send "Create Post"
+		res.view()
 
-module.exports = PostController 
+
+module.exports = PostsController 
 

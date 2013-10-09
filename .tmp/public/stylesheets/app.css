@@ -7074,29 +7074,43 @@ body {
     padding: 35px 50px;
   }
   /* line 174, ../sass/app.scss */
+  body .main .post .entry-container .entry-content h1 {
+    font-size: 2em;
+  }
+  /* line 177, ../sass/app.scss */
+  body .main .post .entry-container .entry-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.4em;
+  }
+  /* line 181, ../sass/app.scss */
   body .main .post .entry-container .entry-content p {
     font-size: 18px;
     line-height: 36px;
     color: #525252;
   }
-  /* line 179, ../sass/app.scss */
+  /* line 186, ../sass/app.scss */
+  body .main .post .entry-container .entry-content textarea {
+    height: 300px;
+    resize: none;
+  }
+  /* line 190, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta {
     bottom: 20px;
     margin-top: 25px;
     position: relative;
     border-radius: 0 0 2px 2px;
   }
-  /* line 184, ../sass/app.scss */
+  /* line 195, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta ul.tags {
     font-size: 18px;
     line-height: 36px;
     color: #525252;
   }
-  /* line 189, ../sass/app.scss */
+  /* line 200, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta .share-container {
     margin-top: 25px;
   }
-  /* line 191, ../sass/app.scss */
+  /* line 202, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta .share-container h4 {
     margin: 0;
     padding-right: 15px;
@@ -7104,20 +7118,20 @@ body {
     line-height: 40px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
-  /* line 204, ../sass/app.scss */
+  /* line 215, ../sass/app.scss */
   body .main aside.side-bar {
     margin-left: 30px;
   }
-  /* line 208, ../sass/app.scss */
+  /* line 219, ../sass/app.scss */
   body .main aside.side-bar .box .wiget-head {
     background: #FFFFFF;
     border-radius: 2px 2px 0 0;
   }
-  /* line 212, ../sass/app.scss */
+  /* line 223, ../sass/app.scss */
   body .main aside.side-bar .box .wiget-body {
     border-radius: 0 0 2px 2px;
   }
-  /* line 215, ../sass/app.scss */
+  /* line 226, ../sass/app.scss */
   body .main aside.side-bar .box h3 {
     padding: 5px 15px;
     font-size: 18px;
