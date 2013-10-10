@@ -1,7 +1,7 @@
 
 module.exports = 
 	attributes : 
-		title: 	'STRING'
+		title: 	'STRING' 
 		ident: 	'STRING'
 		date:	'DATE'
 		text:	'STRING'

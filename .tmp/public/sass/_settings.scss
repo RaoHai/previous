@@ -74,8 +74,8 @@ $default-float: left;
 
 // Make sure border radius matches unless we want it different.
 
-// $global-radius: 3px;
-// $global-rounded: 1000px;
+$global-radius: 5px;
+$global-rounded: 1000px;
 
 // Inset shadow shiny edges and depressions.
 
@@ -372,13 +372,12 @@ $default-float: left;
 
 // We use these to control button border styles.
 
-// $button-border-width: 1px;
+$button-border-width: 0px;
 // $button-border-style: solid;
 
 // We use this to set the default radius used throughout the core.
-
-// $button-radius: $global-radius;
-// $button-round: $global-rounded;
+$button-radius: 10px;
+$button-round: $global-rounded;
 
 // We use this to set default opacity for disabled buttons.
 

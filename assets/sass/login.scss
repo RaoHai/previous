@@ -3,21 +3,41 @@
 @import "fonts";
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/css3/images";
 .center{
 	text-align: center;
 }
-
+.button{
+	border-radius: 4px;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	border-bottom: 1px solid #919090;
+    @include background-image(linear-gradient(top, #2abde8, #06b1e4));
+    &:hover{
+    	@include background-image(linear-gradient(top, #2abde8, #20BBE9));
+    }
+}
+.clf{
+	clear: both;
+	zoom: 1;
+}
+html{
+	height: 100%;
+}
 body{
 	font-family: 'Ubuntu','Conv_Ubuntu-M';
 	background: #323440;
+	height: 100%;
+	position: relative;
 	.login{
-		position: relative;
+		position: absolute;
 		width: 450px;
 		height: 370px;
 		background-color: white;
 		left: 50%;
 		margin-left: -225px;
-		top: 100px;
+		top:40%;
+		margin-top: -185px;
 		@include box-shadow();
 
 		h1{
