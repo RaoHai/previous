@@ -1,1 +1,37 @@
-login.ejs
+<div class="login">
+  <div class="body">
+    <h1>Sign In</h1>
+    <form action="/users/login" method='post'>
+      <fieldset>
+        <div class="row">
+          <div class="columns large-12">
+            <label for="username">
+              Username:
+            </label>
+              <input type="text" name='username' id='username'>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns large-12">
+            <label for="password">
+              Password:
+            </label>
+              <input type="password" name='password' id='password'>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns large-12 center">
+            <input type="submit" class='button' value='Sign in'>
+          </div>
+        </div>
+      </fieldset>
+
+    </form> 
+  </div>
+  <footer>
+  </footer>
+  <div class="pointer"></div>
+  <div class="logo">
+    <a href="/"><img src="/images/logo-white.png" alt=""></a>
+  </div>
+</div>

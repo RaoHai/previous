@@ -1,0 +1,70 @@
+@import "settings";
+@import "foundation";
+@import "fonts";
+@import "compass/reset";
+@import "compass/css3";
+.center{
+	text-align: center;
+}
+
+body{
+	font-family: 'Ubuntu','Conv_Ubuntu-M';
+	background: #323440;
+	.login{
+		position: relative;
+		width: 450px;
+		height: 370px;
+		background-color: white;
+		left: 50%;
+		margin-left: -225px;
+		top: 100px;
+		@include box-shadow();
+
+		h1{
+			font-size: 3em;
+			line-height: 2em;
+			text-align: center;
+			color:#1eb9e7;
+		}
+		fieldset{
+			padding: 0 20px;
+			input[type='text'],input[type='password']{
+				padding-left: 95px;
+			}
+			input[type='submit'] {
+				margin-top: 10px;
+			}
+			label{
+				color:#7A7A7A;
+				font-size: 14px;
+				position: relative;
+				display: inline-block;
+				top: 22px;
+				left:5px;
+			}
+		}
+		.body{
+			height: 300px;
+		}
+		footer{
+			height: 70px;
+			background-color:#56596a;
+		}
+		.pointer{
+			position: absolute;
+			bottom: -60px;
+			left: 80px;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 60px 60px 0 0;
+			border-color: #56596a transparent transparent transparent;
+		}
+		.logo{
+			width: 220px;
+			height: 100px;
+			margin-top:50px;
+		}
+	}
+
+}
