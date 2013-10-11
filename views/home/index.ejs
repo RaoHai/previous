@@ -6,7 +6,7 @@
             <div class="post-title">
               <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
               <h2 class="entry-title">
-               <%= post.title %>
+               <a href='/posts/<%= post.ident %>'><%= post.title %> </a>
               </h2>
               <div class="post-meta">
                 <ul>
@@ -15,9 +15,13 @@
                   <li>Demo</li>
                   <li class="divider">/</li>
                   <li>0 Comments</li>
-
                 </ul>
               </div>
+              <% if (authenticated) { %>
+              <div class="post-action">
+                <a href='/posts/edit/<%= post.ident %>'><i class="icon-pencil"></i></a>
+              </div>
+              <% } %>
             </div>
             <div class="entry-image">
               <img src="images/lua.jpg" alt="">

@@ -20,7 +20,8 @@ module.exports.policies = {
   '*': 'viewHelper',
   PostsController : {
   	create : 'authenticated',
-  	new : 'authenticated'
+  	new : 'authenticated',
+  	edit : 'authenticated'
   }
   /*
 	// Here's an example of adding some policies to a controller

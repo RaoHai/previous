@@ -10,6 +10,6 @@ module.exports = function (req, res, ok) {
 
   // User is not allowed
   else {
-    return res.redirect('/users/login')
+    return res.redirect('/users/login?url='+ req.url)
   }
 };

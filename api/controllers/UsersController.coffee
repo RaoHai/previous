@@ -11,12 +11,17 @@ UsersController =
           shasum.update user.salt + req.param 'password'
           hPassword = shasum.digest 'hex'
           if hPassword == user.hPassword
-            res.redirect '/'
+            req.session.authenticated = true
+            if req.param 'url'
+              res.redirect req.param('url')
+            else 
+              res.redirect '/'
           else
             res.redirect '/users/login'
       else
         res.view 
           layout: 'login_layout'
+          url: req.param 'url'
 
   create : (req, res)->
     crypto.randomBytes 10, (ex, buf)->
