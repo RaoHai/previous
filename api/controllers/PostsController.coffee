@@ -30,7 +30,10 @@ PostsController =
 			res.redirect '/posts/' + req.param 'id'
 
 	find : (req, res)->
-		res.send "hello world"
+		Posts.findOne
+			ident : req.param 'id'
+		.done (err, user)->
+			res.send user
 
 	new : (req, res)->
 		res.view
