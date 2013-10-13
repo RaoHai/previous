@@ -26,14 +26,15 @@ PostsController =
 			ident : req.param 'ident'
 			date : moment()
 			text : req.param 'text'
-		.done (err, user)->
+		.done (err, post)->
 			res.redirect '/posts/' + req.param 'id'
 
 	find : (req, res)->
 		Posts.findOne
 			ident : req.param 'id'
-		.done (err, user)->
-			res.send user
+		.done (err, post)->
+			res.view
+				post : post
 
 	new : (req, res)->
 		res.view
