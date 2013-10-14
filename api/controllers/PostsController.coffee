@@ -36,6 +36,9 @@ PostsController =
 			res.view
 				post : post
 
+	tag : (req, res)->
+		res.send req.param 'id'
+
 	new : (req, res)->
 		res.view
 			title : 'Create New Post'
