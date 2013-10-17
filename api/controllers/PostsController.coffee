@@ -5,6 +5,7 @@ PostsController =
 		Posts.create
 			title : req.param 'title'
 			ident : req.param 'ident'
+			category: req.param 'category'
 			date : moment()
 			text : req.param 'text'
 		.done (err, post) ->
@@ -24,6 +25,7 @@ PostsController =
 		,
 			title : req.param 'title'
 			ident : req.param 'ident'
+			category: req.param 'category'
 			date : moment()
 			text : req.param 'text'
 		.done (err, post)->
@@ -39,8 +41,14 @@ PostsController =
 	tag : (req, res)->
 		res.send req.param 'id'
 
+	category : (req, res)->
+		Posts.find
+			category : req.param 'id'
+		.done (err, posts)->
+			res.view
+				posts : posts
 	new : (req, res)->
-		res.view
+		res.view 'posts/find' ,
 			title : 'Create New Post'
 
 
