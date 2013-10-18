@@ -46,6 +46,8 @@ PostsController =
 			category : req.param 'id'
 		.done (err, posts)->
 			res.view
+				category : req.param 'id'
+				title : req.param 'id'
 				posts : posts
 	new : (req, res)->
 		res.view 'posts/find' ,
