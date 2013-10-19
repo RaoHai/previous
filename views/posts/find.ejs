@@ -9,7 +9,7 @@
                 <ul>
                   <li><%= fmtDate(post.date,"MMM Do") %></li>
                   <li class="divider">/</li>
-                  <li><%= post.category %></li>
+                  <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
                   <li class="divider">/</li>
                   <li>0 Comments</li>
                 </ul>

@@ -5,7 +5,7 @@
   <div class="entry-container">
     <div class="entry-content">
       <h2>Create New Post</h2>
-      <form action="/posts" class='custom' method='POST'>
+      <form action="/posts" class='custom' method='POST' enctype="multipart/form-data"> 
 
         <div class="row collapse">
           <div class="columns small-3">
@@ -24,6 +24,15 @@
             <input type="text" name='ident' id='post-ident'>
           </div>
         </div>
+        <div class="row collapse">
+          <div class="columns small-3">
+            <label for="post-ident" class='inline'>Post Image:</label>
+          </div>
+          <div class="columns small-9">
+            <input type="file" name='image' id='post-image'>
+          </div>
+        </div>
+
         <div class="row collapse">
           <div class="columns small-3">
             <label for="post-ident" class='inline'>Category:</label>

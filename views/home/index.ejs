@@ -12,7 +12,7 @@
                 <ul>
                   <li><%= fmtDate(post.date,"MMM Do") %></li>
                   <li class="divider">/</li>
-                  <li><%= post.category %></li>
+                  <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
                   <li class="divider">/</li>
                   <li>0 Comments</li>
                 </ul>
@@ -28,7 +28,7 @@
             </div>
             <div class="entry-container">
               <div class="entry-content">
-                <p><%- post.text %></p>
+                <p><%- textSummary(post.text) %></p>
 
                 <footer class="entry-meta clearfix">
                   <ul class="tags">

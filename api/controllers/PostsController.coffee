@@ -1,15 +1,28 @@
 moment = require 'moment'
-
+fs = require 'fs'
+path = require 'path'
+util = require 'util'
 PostsController = 
 	create : (req, res)->
-		Posts.create
-			title : req.param 'title'
-			ident : req.param 'ident'
-			category: req.param 'category'
-			date : moment()
-			text : req.param 'text'
-		.done (err, post) ->
-			res.send post
+
+		tmp_path = req.files.image.path
+		target_path = path.join('./','assets','images','uploads',req.files.image.name) 
+
+		readStream = fs.createReadStream(tmp_path)
+		writeStream = fs.createWriteStream(target_path);
+		readStream.pipe writeStream
+		readStream.on 'end', ()->
+	        fs.unlinkSync tmp_path
+	        res.send 'Upload Successed!'
+
+		# Posts.create
+		# 	title : req.param 'title'
+		# 	ident : req.param 'ident'
+		# 	category: req.param 'category'
+		# 	date : moment()
+		# 	text : req.param 'text'
+		# .done (err, post) ->
+		# 	res.send post
 	
 	edit : (req, res)->
 		postident = req.param 'id'
@@ -50,7 +63,7 @@ PostsController =
 				title : req.param 'id'
 				posts : posts
 	new : (req, res)->
-		res.view 'posts/find' ,
+		res.view 'posts/new' ,
 			title : 'Create New Post'
 
 
