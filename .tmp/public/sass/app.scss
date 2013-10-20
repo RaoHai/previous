@@ -242,6 +242,24 @@ body{
         }
       }
 
+    .pagination{
+      margin: 20px 0;
+      text-align: center;
+      span{
+        font-size: 18px;
+        margin-right: 10px;
+        padding: 5px 13px;
+        display: inline-block;
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-radius: 2px 2px 2px 2px;
+        @include transition(all .1s ease-in-out);
+
+        &:hover{
+          @include transform(scale(1.1));
+        }
+      }
+    }
+
     }
 
 

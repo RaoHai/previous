@@ -6,7 +6,6 @@ module.exports = (req, res, ok)->
 	textSummary = req.app.locals.textSummary = (text) ->
 		subtext = text.substr(0 ,500) + '...'
 		ptext = text.split('\n').slice(0,8).join('\n')
-		console.log(subtext, ptext)
 		if subtext.length < ptext.length
 			return subtext
 		return ptext
@@ -14,5 +13,6 @@ module.exports = (req, res, ok)->
 
 
 	req.app.locals.category = null;
+	req.app.locals.post
 	req.app.locals.authenticated = req.session.authenticated
 	ok()

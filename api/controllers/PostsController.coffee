@@ -7,22 +7,21 @@ PostsController =
 
 		tmp_path = req.files.image.path
 		target_path = path.join('./','assets','images','uploads',req.files.image.name) 
-
+		image_path = path.join('images','uploads',req.files.image.name)
 		readStream = fs.createReadStream(tmp_path)
 		writeStream = fs.createWriteStream(target_path);
 		readStream.pipe writeStream
 		readStream.on 'end', ()->
 	        fs.unlinkSync tmp_path
-	        res.send 'Upload Successed!'
-
-		# Posts.create
-		# 	title : req.param 'title'
-		# 	ident : req.param 'ident'
-		# 	category: req.param 'category'
-		# 	date : moment()
-		# 	text : req.param 'text'
-		# .done (err, post) ->
-		# 	res.send post
+			Posts.create
+				title : req.param 'title'
+				ident : req.param 'ident'
+				category: req.param 'category'
+				date : moment()
+				text : req.param 'text'
+				image : image_path
+			.done (err, post) ->
+				res.send post
 	
 	edit : (req, res)->
 		postident = req.param 'id'
@@ -33,16 +32,36 @@ PostsController =
 				post : post
 
 	update : (req, res)->
-		Posts.update
-			ident : req.param 'id'
-		,
-			title : req.param 'title'
-			ident : req.param 'ident'
-			category: req.param 'category'
-			date : moment()
-			text : req.param 'text'
-		.done (err, post)->
-			res.redirect '/posts/' + req.param 'id'
+		if req.files
+			tmp_path = req.files.image.path
+			target_path = path.join('./','assets','images','uploads',req.files.image.name) 
+			image_path = path.join('images','uploads',req.files.image.name)
+			readStream = fs.createReadStream(tmp_path)
+			writeStream = fs.createWriteStream(target_path);
+			readStream.pipe writeStream
+			readStream.on 'end', ()->
+				Posts.update
+					ident : req.param 'id'
+				,
+					title : req.param 'title'
+					ident : req.param 'ident'
+					category: req.param 'category'
+					image : image_path
+					date : moment()
+					text : req.param 'text'
+				.done (err, post)->
+					res.redirect '/posts/' + req.param 'id'		
+		else
+			Posts.update
+				ident : req.param 'id'
+			,
+				title : req.param 'title'
+				ident : req.param 'ident'
+				category: req.param 'category'
+				date : moment()
+				text : req.param 'text'
+			.done (err, post)->
+				res.redirect '/posts/' + req.param 'id'
 
 	find : (req, res)->
 		Posts.findOne

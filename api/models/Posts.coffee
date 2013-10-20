@@ -5,5 +5,6 @@ module.exports =
 		ident: 	'STRING'
 		date:	'DATE'
 		text:	'STRING'
+		image:	'STRING'
 		category: 'STRING'
 		tag:	'STRING'
