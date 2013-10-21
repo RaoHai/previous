@@ -2,6 +2,7 @@ moment = require 'moment'
 fs = require 'fs'
 path = require 'path'
 util = require 'util'
+
 PostsController = 
 	create : (req, res)->
 
@@ -32,7 +33,7 @@ PostsController =
 				post : post
 
 	update : (req, res)->
-		if req.files
+		if req.files.image != undefined
 			tmp_path = req.files.image.path
 			target_path = path.join('./','assets','images','uploads',req.files.image.name) 
 			image_path = path.join('images','uploads',req.files.image.name)
