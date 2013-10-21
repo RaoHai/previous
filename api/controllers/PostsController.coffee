@@ -19,6 +19,7 @@ PostsController =
 				ident : req.param 'ident'
 				category: req.param 'category'
 				date : moment()
+				featured : req.param 'featured'
 				text : req.param 'text'
 				image : image_path
 			.done (err, post) ->
@@ -33,7 +34,8 @@ PostsController =
 				post : post
 
 	update : (req, res)->
-		if req.files.image != undefined
+		
+		if req.files.image != undefined && req.files.image.size > 0
 			tmp_path = req.files.image.path
 			target_path = path.join('./','assets','images','uploads',req.files.image.name) 
 			image_path = path.join('images','uploads',req.files.image.name)
@@ -46,6 +48,7 @@ PostsController =
 				,
 					title : req.param 'title'
 					ident : req.param 'ident'
+					featured : req.param 'featured'
 					category: req.param 'category'
 					image : image_path
 					date : moment()
@@ -58,6 +61,7 @@ PostsController =
 			,
 				title : req.param 'title'
 				ident : req.param 'ident'
+				featured : req.param 'featured'
 				category: req.param 'category'
 				date : moment()
 				text : req.param 'text'

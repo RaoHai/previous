@@ -8,11 +8,15 @@ module.exports = (req, res, ok)->
 		ptext = text.split('\n').slice(0,8).join('\n')
 		if subtext.length < ptext.length
 			return subtext
-		return ptext
-		
+		return ptext	
 
 
 	req.app.locals.category = null;
 	req.app.locals.post
 	req.app.locals.authenticated = req.session.authenticated
-	ok()
+
+	Posts.find
+		featured : 'on'
+	.sort('date DESC').done (err, posts)->
+		req.app.locals.features = posts
+		ok()

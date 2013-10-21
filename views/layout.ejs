@@ -63,7 +63,11 @@
           <div class="box feature-post">
             <h3 class='wiget-head'>Featured Posts</h3>
             <div class="wiget-body">
-
+              <ul class="feature-gallery">
+                <% _.each(features, function (post) { %>   
+                 <li> <%= post.title %></li>
+                <% }) %> 
+              </ul>
             </div>
           </div>
         </aside>
