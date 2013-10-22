@@ -224,14 +224,74 @@ body{
 
       aside.side-bar{
         margin-left: 30px;
-
+        
         .box{
+          position: relative;
+          overflow: hidden;
           .wiget-head{
             background: #FFFFFF;
             border-radius: 2px 2px 0 0;
           }
           .wiget-body{
+            position: relative;
             border-radius: 0 0 2px 2px;
+            text-align: center;
+            overflow: hidden;
+            img{
+              height: 250px;
+              max-width: none;
+              min-width: 100%;
+            }
+            .feature-gallery{
+              width: 1000%;
+              float: left;
+              position: relative;
+              li{
+                float: left;
+                position: relative;
+                width: 10%;
+                height: 250px;
+                display: block;
+              }
+            }
+          }
+          &:hover{
+              .arrow-left{
+                left: 0px !important;
+              }
+              .arrow-right{
+                right: 0px !important;
+              }
+          }
+          .fixed-arrow{
+            position: absolute;
+            top: 50%;
+            height: 50px;
+            margin: 0;
+            font-size: 34px;
+            color: #fff;
+            cursor: pointer;
+            @include transition(all 0.2s ease-in-out);
+
+            &.arrow-left {
+              left: -40px;
+            }
+            &.arrow-right {
+              right: -40px;
+            }
+          }
+          h4{
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            font-size: 30px;
+            color:white;
+            width: 100%;
+            @include text-shadow(1px 1px 2px rgba(0, 0, 0, 0.6));
+
+            a{
+              color:white;
+            }
           }
           h3{
             padding: 5px 15px;
