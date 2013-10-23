@@ -14,9 +14,9 @@ module.exports = (req, res, ok)->
 
 	cdn = req.app.locals.cdn = (url) ->
 		if config_local.cdn
-			return 'http://static.previous-blog.com' + url
+			return '"http://static.previous-blog.com' + url + '"'
 		else
-			return url
+			return url + '?v=' +  Math.random()
 
 	req.app.locals.category = null;
 	req.app.locals.post
