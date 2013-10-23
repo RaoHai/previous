@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href=<%= cdn("/stylesheets/font-awesome.min.css") %> media="all" rel="stylesheet" type="text/css" />
-  <link href=<%= cdn("/stylesheets/app.css")%> media="all" rel="stylesheet" type="text/css" />
+  <link href=<%= fmtDate(post.updatedAt("/stylesheets/font-awesome.min.css") %> media="all" rel="stylesheet" type="text/css" />
+  <link href=<%= fmtDate(post.updatedAt("/stylesheets/app.css")%> media="all" rel="stylesheet" type="text/css" />
   <title><%= title ? title + ' - Previous' : 'Previous' %></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -14,7 +14,7 @@
     <div class="top-banner">
       <div class="container">
         <a href="/" class="brand">
-          <img src=<%= cdn("/images/logo-white.png")%> alt="">
+          <img src=<%= fmtDate(post.updatedAt("/images/logo-white.png")%> alt="">
           <h1>
             由二顛倒分別見妄
           </h1>
@@ -25,7 +25,7 @@
   <div class="navigation fluid">
     <div class="container">
       <div class="mini-logo">
-        <a href='/'><img src=<%= cdn("/images/logo-small.png")%> alt=""></a>
+        <a href='/'><img src=<%= fmtDate(post.updatedAt("/images/logo-small.png")%> alt=""></a>
       </div>
       <nav class="top-bar">
         <section class="top-bar-section">
@@ -67,9 +67,9 @@
                 <% _.each(features, function (post) { %>   
                  <li> 
                   <% if (post.image){ %>
-                  <img src=<%= cdn('/' + post.image)%> alt="">
+                  <img src=<%= fmtDate(post.updatedAt('/' + post.image)%> alt="">
                   <% } else { %>
-                  <img src=<%= cdn("/images/default.png")%> alt="">
+                  <img src=<%= fmtDate(post.updatedAt("/images/default.png")%> alt="">
                   <% } %>
                  <h4> <a href='/posts/<%=post.ident %>'><%= post.title %></a></h4>
 
@@ -90,27 +90,27 @@
   </div>
   <script>
   document.write('<script src=' +
-    ('__proto__' in {} ? <%= cdn('/js/vendor/zepto')%> : <%= cdn('/js/vendor/jquery') %> +
+    ('__proto__' in {} ? <%= fmtDate(post.updatedAt('/js/vendor/zepto')%> : <%= fmtDate(post.updatedAt('/js/vendor/jquery') %> +
     '.js><\/script>')
   </script>
-  <script src=<%= cdn("/js/foundation/foundation.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.alerts.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.clearing.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.cookie.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.dropdown.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.forms.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.joyride.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.magellan.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.orbit.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.placeholder.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.reveal.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.section.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.tooltips.js") %>></script>
-  <script src=<%= cdn("/js/foundation/foundation.topbar.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.alerts.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.clearing.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.cookie.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.dropdown.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.forms.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.joyride.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.magellan.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.orbit.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.placeholder.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.reveal.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.section.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.tooltips.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/foundation/foundation.topbar.js") %>></script>
 
-  <script src=<%= cdn("/ckeditor/ckeditor.js") %>></script>
-  <script src=<%= cdn("/ckeditor/adapters/jquery.js") %>></script>
-  <script src=<%= cdn("/ckeditor/init.js") %>></script>
-  <script src=<%= cdn("/js/app.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/ckeditor/ckeditor.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/ckeditor/adapters/jquery.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/ckeditor/init.js") %>></script>
+  <script src=<%= fmtDate(post.updatedAt("/js/app.js") %>></script>
 </body>
 </html>
