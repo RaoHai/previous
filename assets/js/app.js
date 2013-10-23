@@ -11,7 +11,7 @@
  		} else {
  			featured_index -= 1;
  		}
- 		$('.feature-gallery').animate({'left':featured_index * -360 });
+ 		$('.feature-gallery').animate({'left':featured_index * -360 },500);
  	});
 
  	$('.arrow-right').click(function() {
@@ -20,7 +20,7 @@
  		} else {
  			featured_index += 1;
  		}
- 		$('.feature-gallery').animate({'left':featured_index * -360 });
+ 		$('.feature-gallery').animate({'left':featured_index * -360 },500);
  	});
 
 
