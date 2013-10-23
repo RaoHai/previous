@@ -1,5 +1,7 @@
 moment = require 'moment'
+config_local = require '../../config/local'
 module.exports = (req, res, ok)->
+	console.log config_local
 	fmtDate = req.app.locals.fmtDate = (date, fmtstr)->
 		moment(date).format(fmtstr)
 
@@ -10,6 +12,11 @@ module.exports = (req, res, ok)->
 			return subtext
 		return ptext	
 
+	cdn = req.app.locals.cdn = (url) ->
+		if config_local.cdn
+			return 'http://static.previous-blog.com' + url
+		else
+			return url
 
 	req.app.locals.category = null;
 	req.app.locals.post
