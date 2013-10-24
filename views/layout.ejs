@@ -67,13 +67,13 @@
             <div class="wiget-body">
               <ul class="feature-gallery clearfix">
                 <% _.each(features, function (post) { %>   
-                 <li> 
+                <li> 
                   <% if (post.image){ %>
                   <img src=<%- cdn('/' + post.image)%> alt="">
                   <% } else { %>
                   <img src=<%- cdn("/images/default.png")%> alt="">
                   <% } %>
-                 <h4> <a href='/posts/<%=post.ident %>'><%= post.title %></a></h4>
+                  <h4> <a href='/posts/<%=post.ident %>'><%= post.title %></a></h4>
 
                 </li>
                 <% }) %> 
@@ -87,7 +87,16 @@
             </div>
           </div>
           <div class="box about-me">
-           
+            <img id='profile' src="" alt="">
+            <div class="wiget-body">
+              <div class="avatar">
+                <img src="" alt="" id="avatar">
+              </div>
+              <div class="bio">
+                <h3></h3>
+                <p class="muted"></p>
+              </div>
+            </div>
           </div>
         </aside>
       </div>
@@ -115,17 +124,24 @@
   <script src=<%- cdn("/ckeditor/init.js") %>></script>
   <script src=<%- cdn("/js/app.js") %>></script>
   <script type="text/javascript">
-  WB2.anyWhere(function(W){
+  $(function(){
+    WB2.anyWhere(function(W){
       W.parseCMD("/users/show.json", function(sResult, bStatus){
-          try{
-              //to do something...
-          }catch(e){}
+        try{
+          if (bStatus === true) {
+            $('#profile').attr('src',sResult.cover_image);
+            $('#avatar').attr('src',sResult.avatar_hd);
+            $('.bio h3').html(sResult.name);
+            $('.bio .muted').html(sResult.description);
+          };
+        }catch(e){}
       },{
-          uid: '1070446481'
-      }{
-          method: 'get'
+        uid: '1070446481'
+      },{
+        method: 'get'
       });
+    });
   });
-</script>
+  </script>
 </body>
 </html>
