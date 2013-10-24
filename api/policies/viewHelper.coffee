@@ -1,7 +1,6 @@
 moment = require 'moment'
 config_local = require '../../config/local'
 module.exports = (req, res, ok)->
-	console.log config_local
 	fmtDate = req.app.locals.fmtDate = (date, fmtstr)->
 		moment(date).format(fmtstr)
 
