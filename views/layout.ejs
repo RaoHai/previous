@@ -86,15 +86,18 @@
               <i class="icon-chevron-right"></i>
             </div>
           </div>
-          <div class="box about-me">
-            <img id='profile' src="" alt="">
+         <div class="box about-me">
+            <img id="profile" src=<%- cdn("/images/cover.jpg") %> alt="">
             <div class="wiget-body">
               <div class="avatar">
-                <img src="" alt="" id="avatar">
+                <a href='http://weibo.com/rluly'>
+                  <img src="http://tp2.sinaimg.cn/1070446481/180/40011569017/1" alt="" id="avatar">
+                  <img src="/images/weibo.png" alt="" id='weibo'>
+                </a>
               </div>
               <div class="bio">
-                <h3></h3>
-                <p class="muted"></p>
+                <a href='http://weibo.com/rluly'><h3>_陆续</h3></a>
+                <p class="muted">:写代码的2B文艺男青年</p>
               </div>
             </div>
           </div>
@@ -129,7 +132,6 @@
       W.parseCMD("/users/show.json", function(sResult, bStatus){
         try{
           if (bStatus === true) {
-            $('#profile').attr('src',sResult.cover_image);
             $('#avatar').attr('src',sResult.avatar_hd);
             $('.bio h3').html(sResult.name);
             $('.bio .muted').html(sResult.description);
