@@ -63,28 +63,7 @@
       <div class="columns large-4">
         <aside class="side-bar">
           <div class="box feature-post">
-            <h3 class='wiget-head'>Featured Posts</h3>
-            <div class="wiget-body">
-              <ul class="feature-gallery clearfix">
-                <% _.each(features, function (post) { %>   
-                <li> 
-                  <% if (post.image){ %>
-                  <img src=<%- cdn('/' + post.image)%> alt="">
-                  <% } else { %>
-                  <img src=<%- cdn("/images/default.png")%> alt="">
-                  <% } %>
-                  <h4> <a href='/posts/<%=post.ident %>'><%= post.title %></a></h4>
-
-                </li>
-                <% }) %> 
-              </ul>
-            </div>
-            <div class="fixed-arrow arrow-left">
-              <i class="icon-chevron-left"></i>
-            </div>
-            <div class="fixed-arrow arrow-right">
-              <i class="icon-chevron-right"></i>
-            </div>
+            <%- partial('partials/features')%>
           </div>
          <div class="box about-me">
             <img id="profile" src=<%- cdn("/images/cover.jpg") %> alt="">

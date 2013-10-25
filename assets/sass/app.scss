@@ -35,40 +35,40 @@ body{
 }
  @include keyframes(flip1) {  
     0% {  
-        -webkit-transform: rotateY(0deg);   
+        @include transform(rotateY(0deg));   
     }  
     100% {  
-        -webkit-transform: rotateY(90deg);
+        @include transform(rotateY(90deg));
     }  
 }
 @include keyframes(flip3) {  
     0% {  
-        -webkit-transform: rotateY(90deg);   
+        @include transform(rotateY(90deg));   
     }  
     50% {
-      -webkit-transform: rotateY(90deg); 
+      @include transform(rotateY(90deg)); 
     }
     100% {  
-        -webkit-transform: rotateY(0deg);
+       @include transform(rotateY(0deg));
     }  
 }
 @include keyframes(flip2) {  
     0% {  
-        -webkit-transform: rotateY(-90deg);  
+        @include transform(rotateY(-90deg));  
     }
     50% {
-      -webkit-transform: rotateY(-90deg); 
+      @include transform(rotateY(-90deg)); 
     }
     100% {  
-      -webkit-transform: rotateY(0deg);
+      @include transform(rotateY(0deg));
     }  
 }
 @include keyframes(flip4) {  
     0% {  
-        -webkit-transform: rotateY(0deg);  
+       @include transform(rotateY(0deg));  
     }
     100% {  
-      -webkit-transform: rotateY(-90deg);
+      @include transform(rotateY(-90deg));
     }  
 }
 @media all {
