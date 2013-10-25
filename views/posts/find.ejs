@@ -8,9 +8,7 @@
               <div class="post-meta">
                 <ul>
                   <li><%= fmtDate(post.updatedAt,"MMM Do") %></li>
-                  <li class="divider">/</li>
                   <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
-                  <li class="divider">/</li>
                   <li>0 Comments</li>
                 </ul>
               </div>
@@ -20,11 +18,11 @@
               </div>
               <% } %>
             </div>
+             <% if (post.image){ %>
             <div class="entry-image">
-              <% if (post.image){ %>
               <img src="/<%= post.image %>" alt="">
-              <% } %>
             </div>
+            <% } %>
             <div class="entry-container">
               <div class="entry-content">
                 <p><%- post.text %></p>

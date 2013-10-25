@@ -1,50 +1,50 @@
-           <% _.each(posts, function (post) { %>     
-          <div class="post">
-            <div class="post-title">
-              <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
-              <h2 class="entry-title">
-               <a href='/posts/<%= post.ident %>'><%= post.title %> </a>
-              </h2>
-              <div class="post-meta">
-                <ul>
-                  <li><%= fmtDate(post.updatedAt,"MMM Do") %></li>
-                  <li class="divider">/</li>
-                  <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
-                  <li class="divider">/</li>
-                  <li>0 Comments</li>
-                </ul>
-              </div>
-              <% if (authenticated) { %>
-              <div class="post-action">
-                <a href='/posts/edit/<%= post.ident %>'><i class="icon-pencil"></i></a>
-              </div>
-              <% } %>
-            </div>
-            <div class="entry-image">
-              <% if (post.image){ %>
-              <img src="/<%= post.image %>" alt="">
-              <% } %>
-            </div>
-            <div class="entry-container">
-              <div class="entry-content">
-                <p><%- textSummary(post.text) %></p>
+     <% _.each(posts, function (post) { %>     
+     <div class="post">
+      <div class="post-title">
+        <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
+        <h2 class="entry-title">
+         <a href='/posts/<%= post.ident %>'><%= post.title %> </a>
+       </h2>
+       <div class="post-meta">
+        <ul>
+          <li><%= fmtDate(post.updatedAt,"MMM Do") %></li>
+          <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
+          <li>0 Comments</li>
+        </ul>
+      </div>
+      <% if (authenticated) { %>
+      <div class="post-action">
+        <a href='/posts/edit/<%= post.ident %>'><i class="icon-pencil"></i></a>
+      </div>
+      <% } %>
+    </div>
+    <% if (post.image){ %>
+    <div class="entry-image">
 
-                <footer class="entry-meta clearfix">
-                  <ul class="tags">
-                    <li>Welcome</li>
-                  </ul>
-                  <div class="share-container">
-                    <h4>Share Story</h4>
-                    <ul class="share-story">
+      <img src="/<%= post.image %>" alt="">
 
-                    </ul>
-                  </div>
-                </footer>
-              </div>
-            </div>
+    </div>
+    <% } %>
+    <div class="entry-container">
+      <div class="entry-content">
+        <p><%- textSummary(post.text) %></p>
+
+        <footer class="entry-meta clearfix">
+          <ul class="tags">
+            <li>Welcome</li>
+          </ul>
+          <div class="share-container">
+            <h4>Share Story</h4>
+            <ul class="share-story">
+
+            </ul>
           </div>
-          <!-- end post -->
-          <% }) %>
-          <%- partial('../partials/pagination')%>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- end post -->
+  <% }) %>
+  <%- partial('../partials/pagination')%>
 
-        
+  

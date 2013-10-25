@@ -7365,22 +7365,23 @@ body {
   }
   /* line 145, ../sass/app.scss */
   body .navigation .container .mini-logo {
+    width: 115px;
     float: left;
     max-width: 200px;
   }
-  /* line 150, ../sass/app.scss */
+  /* line 151, ../sass/app.scss */
   body .navigation .container .top-bar {
     float: left;
   }
-  /* line 153, ../sass/app.scss */
+  /* line 154, ../sass/app.scss */
   body .navigation .container .top-bar li a {
     padding: 0px 25px;
   }
-  /* line 155, ../sass/app.scss */
+  /* line 156, ../sass/app.scss */
   body .navigation .container .top-bar li a:hover {
     background-color: #f2f2f2;
   }
-  /* line 160, ../sass/app.scss */
+  /* line 161, ../sass/app.scss */
   body .navigation .container .top-bar ul.dropdown {
     min-width: 210px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -7389,36 +7390,39 @@ body {
     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
-  /* line 167, ../sass/app.scss */
+  /* line 168, ../sass/app.scss */
   body .navigation .container .top-bar ul.dropdown li a {
     font-size: 14px;
     padding: 15px 20px;
   }
-  /* line 178, ../sass/app.scss */
+  /* line 179, ../sass/app.scss */
   body .main {
     padding-top: 25px;
     margin-bottom: 50px;
     width: 1170px;
     margin: auto;
   }
-  /* line 183, ../sass/app.scss */
+  /* line 184, ../sass/app.scss */
   body .main .post {
     position: relative;
+    padding-top: 30px;
     margin-bottom: 30px;
-  }
-  /* line 187, ../sass/app.scss */
-  body .main .post .post-title {
     background-color: white;
+  }
+  /* line 190, ../sass/app.scss */
+  body .main .post .post-title {
+    position: relative;
     border-radius: 2px 2px 0 0;
-    padding: 35px 105px 35px 45px;
     margin: 0;
   }
-  /* line 192, ../sass/app.scss */
+  /* line 194, ../sass/app.scss */
   body .main .post .post-title h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
+    line-height: 65px;
+    margin-left: 145px;
   }
-  /* line 196, ../sass/app.scss */
+  /* line 200, ../sass/app.scss */
   body .main .post .post-title .post-action {
     float: left;
     position: absolute;
@@ -7426,91 +7430,96 @@ body {
     top: 30px;
     font-size: 2em;
   }
-  /* line 203, ../sass/app.scss */
+  /* line 207, ../sass/app.scss */
   body .main .post .post-title .post-meta {
+    position: absolute;
+    left: 0;
+    top: 71px;
     color: #9a9a9a;
     font-size: 14px;
     height: 25px;
   }
-  /* line 207, ../sass/app.scss */
+  /* line 214, ../sass/app.scss */
   body .main .post .post-title .post-meta ul {
     display: inline-block;
     float: left;
   }
-  /* line 210, ../sass/app.scss */
+  /* line 217, ../sass/app.scss */
   body .main .post .post-title .post-meta ul li {
-    float: left;
+    width: 100px;
+    text-align: right;
     margin-right: 15px;
     line-height: 20px;
   }
-  /* line 216, ../sass/app.scss */
+  /* line 224, ../sass/app.scss */
   body .main .post .post-title .post-meta:before, body .main .post .post-title .post-meta:after {
     content: "";
     display: table;
     line-height: 0;
   }
-  /* line 223, ../sass/app.scss */
+  /* line 231, ../sass/app.scss */
   body .main .post .post-title .author {
     float: left;
-    margin-right: 15px;
+    margin-left: 50px;
   }
-  /* line 226, ../sass/app.scss */
+  /* line 234, ../sass/app.scss */
   body .main .post .post-title .author img {
     border-radius: 500px;
     height: 50px;
   }
-  /* line 233, ../sass/app.scss */
+  /* line 241, ../sass/app.scss */
   body .main .post .entry-image {
+    margin: 10px 70px 30px 145px;
     overflow: hidden;
     background: #F4F4F4;
     max-height: 400px;
   }
-  /* line 239, ../sass/app.scss */
+  /* line 249, ../sass/app.scss */
   body .main .post .entry-container {
     background: none repeat scroll 0 0 #FFFFFF;
   }
-  /* line 241, ../sass/app.scss */
+  /* line 251, ../sass/app.scss */
   body .main .post .entry-container .entry-content {
-    padding: 35px 50px;
+    padding: 0 70px 35px 145px;
   }
-  /* line 243, ../sass/app.scss */
+  /* line 253, ../sass/app.scss */
   body .main .post .entry-container .entry-content h1 {
     font-size: 2em;
   }
-  /* line 246, ../sass/app.scss */
+  /* line 256, ../sass/app.scss */
   body .main .post .entry-container .entry-content h2 {
     font-size: 1.3em;
     margin-bottom: 0.4em;
   }
-  /* line 250, ../sass/app.scss */
+  /* line 260, ../sass/app.scss */
   body .main .post .entry-container .entry-content p {
     font-size: 18px;
     line-height: 36px;
     color: #525252;
   }
-  /* line 255, ../sass/app.scss */
+  /* line 265, ../sass/app.scss */
   body .main .post .entry-container .entry-content textarea {
     height: 300px;
     resize: none;
   }
-  /* line 259, ../sass/app.scss */
+  /* line 269, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta {
     bottom: 20px;
     margin-top: 25px;
     position: relative;
     border-radius: 0 0 2px 2px;
   }
-  /* line 264, ../sass/app.scss */
+  /* line 274, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta ul.tags {
     font-size: 18px;
     line-height: 36px;
     color: #525252;
   }
-  /* line 269, ../sass/app.scss */
+  /* line 279, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta .share-container {
     margin-top: 25px;
   }
-  /* line 271, ../sass/app.scss */
+  /* line 281, ../sass/app.scss */
   body .main .post .entry-container .entry-content .entry-meta .share-container h4 {
     margin: 0;
     padding-right: 15px;
@@ -7518,40 +7527,40 @@ body {
     line-height: 40px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
-  /* line 284, ../sass/app.scss */
+  /* line 294, ../sass/app.scss */
   body .main aside.side-bar {
     margin-left: 30px;
   }
-  /* line 287, ../sass/app.scss */
+  /* line 297, ../sass/app.scss */
   body .main aside.side-bar .box {
     position: relative;
     overflow: hidden;
   }
-  /* line 290, ../sass/app.scss */
+  /* line 300, ../sass/app.scss */
   body .main aside.side-bar .box .wiget-head {
     background: #FFFFFF;
     border-radius: 2px 2px 0 0;
   }
-  /* line 295, ../sass/app.scss */
+  /* line 305, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body {
     position: relative;
     border-radius: 0 0 2px 2px;
     text-align: center;
     overflow: hidden;
   }
-  /* line 300, ../sass/app.scss */
+  /* line 310, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body img {
     height: 250px;
     max-width: none;
     min-width: 100%;
   }
-  /* line 305, ../sass/app.scss */
+  /* line 315, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery {
     width: 1000%;
     float: left;
     position: relative;
   }
-  /* line 309, ../sass/app.scss */
+  /* line 319, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery li {
     float: left;
     position: relative;
@@ -7559,15 +7568,15 @@ body {
     height: 250px;
     display: block;
   }
-  /* line 319, ../sass/app.scss */
+  /* line 329, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post:hover .arrow-left {
     left: 0px !important;
   }
-  /* line 322, ../sass/app.scss */
+  /* line 332, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post:hover .arrow-right {
     right: 0px !important;
   }
-  /* line 326, ../sass/app.scss */
+  /* line 336, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow {
     position: absolute;
     top: 50%;
@@ -7581,15 +7590,15 @@ body {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  /* line 336, ../sass/app.scss */
+  /* line 346, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-left {
     left: -40px;
   }
-  /* line 339, ../sass/app.scss */
+  /* line 349, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-right {
     right: -40px;
   }
-  /* line 343, ../sass/app.scss */
+  /* line 353, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post h4 {
     position: absolute;
     top: 50%;
@@ -7599,27 +7608,27 @@ body {
     width: 100%;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   }
-  /* line 352, ../sass/app.scss */
+  /* line 362, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post h4 a {
     color: white;
   }
-  /* line 356, ../sass/app.scss */
+  /* line 366, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post h3 {
     padding: 5px 15px;
     font-size: 18px;
     line-height: 40px;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
   }
-  /* line 364, ../sass/app.scss */
+  /* line 374, ../sass/app.scss */
   body .main aside.side-bar .box.about-me {
     margin-top: 50px;
     background: white;
   }
-  /* line 367, ../sass/app.scss */
+  /* line 377, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body {
     position: relative;
   }
-  /* line 370, ../sass/app.scss */
+  /* line 380, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar {
     width: 100px;
     height: 100px;
@@ -7632,7 +7641,7 @@ body {
     -webkit-border-radius: 500px;
     border-radius: 500px;
   }
-  /* line 381, ../sass/app.scss */
+  /* line 391, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img {
     position: absolute;
     top: 5px;
@@ -7641,35 +7650,35 @@ body {
     -webkit-border-radius: 500px;
     border-radius: 500px;
   }
-  /* line 388, ../sass/app.scss */
+  /* line 398, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img#avatar {
     -webkit-animation: flip3 0.5s normal forwards;
     -moz-animation: flip3 0.5s normal forwards;
     -o-animation: flip3 0.5s normal forwards;
     animation: flip3 0.5s normal forwards;
   }
-  /* line 392, ../sass/app.scss */
+  /* line 402, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img#weibo {
     -webkit-animation: flip4 0.25s normal forwards;
     -moz-animation: flip4 0.25s normal forwards;
     -o-animation: flip4 0.25s normal forwards;
     animation: flip4 0.25s normal forwards;
   }
-  /* line 398, ../sass/app.scss */
+  /* line 408, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#avatar {
     -webkit-animation: flip1 0.25s normal forwards;
     -moz-animation: flip1 0.25s normal forwards;
     -o-animation: flip1 0.25s normal forwards;
     animation: flip1 0.25s normal forwards;
   }
-  /* line 401, ../sass/app.scss */
+  /* line 411, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#weibo {
     -webkit-animation: flip2 0.5s normal forwards;
     -moz-animation: flip2 0.5s normal forwards;
     -o-animation: flip2 0.5s normal forwards;
     animation: flip2 0.5s normal forwards;
   }
-  /* line 406, ../sass/app.scss */
+  /* line 416, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio {
     padding-top: 50px;
     padding-left: 25px;
@@ -7677,7 +7686,7 @@ body {
     padding-bottom: 15px;
     color: #333;
   }
-  /* line 412, ../sass/app.scss */
+  /* line 422, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio h3 {
     text-align: center;
     margin: 10px 0;
@@ -7687,16 +7696,16 @@ body {
     font-size: 18px;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
   }
-  /* line 421, ../sass/app.scss */
+  /* line 431, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio .muted {
     color: #999999;
   }
-  /* line 431, ../sass/app.scss */
+  /* line 441, ../sass/app.scss */
   body .main .pagination {
     margin: 20px 0;
     text-align: center;
   }
-  /* line 434, ../sass/app.scss */
+  /* line 444, ../sass/app.scss */
   body .main .pagination span {
     font-size: 18px;
     margin-right: 10px;
@@ -7709,7 +7718,7 @@ body {
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
-  /* line 443, ../sass/app.scss */
+  /* line 453, ../sass/app.scss */
   body .main .pagination span:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
