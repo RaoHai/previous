@@ -12,10 +12,7 @@ module.exports = (req, res, ok)->
 		return ptext	
 
 	cdn = req.app.locals.cdn = (url) ->
-		if config_local.cdn
-			return '"http://static.previous-blog.com' + url + '"'
-		else
-			return url + '?v=' +  Math.random()
+		return url
 
 	req.app.locals.category = null;
 	req.app.locals.post
