@@ -38,9 +38,6 @@ module.exports = {
 
   port: process.env.PORT || 1337,
 
-  cdn : false,
-
-
   // The runtime "environment" of your Sails app is either 'development' or 'production'.
   //
   // In development, your Sails app will go out of its way to help you

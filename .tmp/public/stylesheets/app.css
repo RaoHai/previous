@@ -7533,34 +7533,43 @@ body {
   }
   /* line 297, ../sass/app.scss */
   body .main aside.side-bar .box {
+    margin-top: 50px;
     position: relative;
     overflow: hidden;
   }
-  /* line 300, ../sass/app.scss */
+  /* line 301, ../sass/app.scss */
+  body .main aside.side-bar .box:first-child {
+    margin-top: 0;
+  }
+  /* line 304, ../sass/app.scss */
   body .main aside.side-bar .box .wiget-head {
     background: #FFFFFF;
     border-radius: 2px 2px 0 0;
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 40px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
   }
-  /* line 305, ../sass/app.scss */
+  /* line 313, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body {
     position: relative;
     border-radius: 0 0 2px 2px;
     text-align: center;
     overflow: hidden;
   }
-  /* line 310, ../sass/app.scss */
+  /* line 318, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body img {
     height: 250px;
     max-width: none;
     min-width: 100%;
   }
-  /* line 315, ../sass/app.scss */
+  /* line 323, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery {
     width: 1000%;
     float: left;
     position: relative;
   }
-  /* line 319, ../sass/app.scss */
+  /* line 327, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery li {
     float: left;
     position: relative;
@@ -7568,15 +7577,15 @@ body {
     height: 250px;
     display: block;
   }
-  /* line 329, ../sass/app.scss */
+  /* line 337, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post:hover .arrow-left {
     left: 0px !important;
   }
-  /* line 332, ../sass/app.scss */
+  /* line 340, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post:hover .arrow-right {
     right: 0px !important;
   }
-  /* line 336, ../sass/app.scss */
+  /* line 344, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow {
     position: absolute;
     top: 50%;
@@ -7590,15 +7599,15 @@ body {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  /* line 346, ../sass/app.scss */
+  /* line 354, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-left {
     left: -40px;
   }
-  /* line 349, ../sass/app.scss */
+  /* line 357, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-right {
     right: -40px;
   }
-  /* line 353, ../sass/app.scss */
+  /* line 361, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post h4 {
     position: absolute;
     top: 50%;
@@ -7608,27 +7617,19 @@ body {
     width: 100%;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   }
-  /* line 362, ../sass/app.scss */
+  /* line 370, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post h4 a {
     color: white;
   }
-  /* line 366, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post h3 {
-    padding: 5px 15px;
-    font-size: 18px;
-    line-height: 40px;
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
-  }
-  /* line 374, ../sass/app.scss */
+  /* line 377, ../sass/app.scss */
   body .main aside.side-bar .box.about-me {
-    margin-top: 50px;
     background: white;
   }
-  /* line 377, ../sass/app.scss */
+  /* line 379, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body {
     position: relative;
   }
-  /* line 380, ../sass/app.scss */
+  /* line 382, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar {
     width: 100px;
     height: 100px;
@@ -7641,7 +7642,7 @@ body {
     -webkit-border-radius: 500px;
     border-radius: 500px;
   }
-  /* line 391, ../sass/app.scss */
+  /* line 393, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img {
     position: absolute;
     top: 5px;
@@ -7650,35 +7651,35 @@ body {
     -webkit-border-radius: 500px;
     border-radius: 500px;
   }
-  /* line 398, ../sass/app.scss */
+  /* line 400, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img#avatar {
     -webkit-animation: flip3 0.5s normal forwards;
     -moz-animation: flip3 0.5s normal forwards;
     -o-animation: flip3 0.5s normal forwards;
     animation: flip3 0.5s normal forwards;
   }
-  /* line 402, ../sass/app.scss */
+  /* line 404, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img#weibo {
     -webkit-animation: flip4 0.25s normal forwards;
     -moz-animation: flip4 0.25s normal forwards;
     -o-animation: flip4 0.25s normal forwards;
     animation: flip4 0.25s normal forwards;
   }
-  /* line 408, ../sass/app.scss */
+  /* line 410, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#avatar {
     -webkit-animation: flip1 0.25s normal forwards;
     -moz-animation: flip1 0.25s normal forwards;
     -o-animation: flip1 0.25s normal forwards;
     animation: flip1 0.25s normal forwards;
   }
-  /* line 411, ../sass/app.scss */
+  /* line 413, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#weibo {
     -webkit-animation: flip2 0.5s normal forwards;
     -moz-animation: flip2 0.5s normal forwards;
     -o-animation: flip2 0.5s normal forwards;
     animation: flip2 0.5s normal forwards;
   }
-  /* line 416, ../sass/app.scss */
+  /* line 418, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio {
     padding-top: 50px;
     padding-left: 25px;
@@ -7686,7 +7687,7 @@ body {
     padding-bottom: 15px;
     color: #333;
   }
-  /* line 422, ../sass/app.scss */
+  /* line 424, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio h3 {
     text-align: center;
     margin: 10px 0;
@@ -7696,16 +7697,16 @@ body {
     font-size: 18px;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
   }
-  /* line 431, ../sass/app.scss */
+  /* line 433, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio .muted {
     color: #999999;
   }
-  /* line 441, ../sass/app.scss */
+  /* line 443, ../sass/app.scss */
   body .main .pagination {
     margin: 20px 0;
     text-align: center;
   }
-  /* line 444, ../sass/app.scss */
+  /* line 446, ../sass/app.scss */
   body .main .pagination span {
     font-size: 18px;
     margin-right: 10px;
@@ -7718,7 +7719,7 @@ body {
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
-  /* line 453, ../sass/app.scss */
+  /* line 455, ../sass/app.scss */
   body .main .pagination span:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);

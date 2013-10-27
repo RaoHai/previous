@@ -12,7 +12,7 @@ module.exports = (req, res, ok)->
 		return ptext	
 
 	cdn = req.app.locals.cdn = (url) ->
-		return url
+		return url + '?v=' + Math.random()
 
 	req.app.locals.category = null;
 	req.app.locals.post

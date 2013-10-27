@@ -295,11 +295,19 @@ body{
         margin-left: 30px;
         
         .box{
+          margin-top: 50px;
           position: relative;
           overflow: hidden;
+          &:first-child{
+            margin-top: 0;
+          }
           .wiget-head{
             background: #FFFFFF;
             border-radius: 2px 2px 0 0;
+            padding: 5px 15px;
+            font-size: 18px;
+            line-height: 40px;
+            box-shadow: 0 -1px 0 rgba(0,0,0,0.06) inset;
           }
           &.feature-post{
             .wiget-body{
@@ -363,16 +371,10 @@ body{
                 color:white;
               }
             }
-            h3{
-              padding: 5px 15px;
-              font-size: 18px;
-              line-height: 40px;
-              box-shadow: 0 -1px 0 rgba(0,0,0,0.06) inset;
-            }
+
           }
 
           &.about-me{
-            margin-top: 50px;
             background: white;
             .wiget-body{
               position: relative;

@@ -6,5 +6,6 @@ module.exports =
 		date:	'DATE'
 		text:	'STRING'
 		image:	'STRING'
+		featured : 'BOOLEAN'
 		category: 'STRING'
 		tag:	'STRING'

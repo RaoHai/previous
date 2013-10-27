@@ -11,7 +11,8 @@
         "ejs-locals": "~1.0.2",
         "moment":"",
         "optimist": "0.3.4",
-        "sails-mongo":"0.9"
+        "sails-mongo":"0.9",
+        "async"
     },
     "scripts": {
         "start": "node app.js",

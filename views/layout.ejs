@@ -46,7 +46,7 @@
                 <li><a href='/posts/category/Other'>Other</a></li>
               </ul>
             </li>
-            <li><a href="#">Previous</a></li>
+            <li><a href="/posts/category/Previous">Previous</a></li>
             <li><a href="#">About</a></li>
           </ul>
         </section>
@@ -79,6 +79,16 @@
                 <p class="muted">:写代码的2B文艺男青年</p>
               </div>
             </div>
+          </div>
+          <div class="box category">
+              <h3 class='wiget-head'>Categories</h3>
+              <div class="wiget-body">
+                <ul>
+                  <% _.each(categories, function (ct) { %>   
+                    <li><%= ct.category %> : <span class="right"> <%= ct.count %> </span></li>
+                  <% }) %>
+                </ul>
+              </div>
           </div>
 
         </aside>
