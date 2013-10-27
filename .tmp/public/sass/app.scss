@@ -298,8 +298,12 @@ body{
           margin-top: 50px;
           position: relative;
           overflow: hidden;
+          background: white;
           &:first-child{
             margin-top: 0;
+          }
+          .wiget-body{
+              background-color: white;
           }
           .wiget-head{
             background: #FFFFFF;
@@ -308,6 +312,26 @@ body{
             font-size: 18px;
             line-height: 40px;
             box-shadow: 0 -1px 0 rgba(0,0,0,0.06) inset;
+          }
+
+          &.category{
+            background-color: white;
+            .wiget-body{
+              padding: 15px;
+            }
+            ul{
+              li{
+                padding:8px 0;
+                font-size: 14px;
+                line-height: 20px;
+                border-bottom: 1px solid rgba(0,0,0,0.03);
+                span{
+                  background-color: rgba(0,0,0,0.2);
+                  color:white;
+                  padding: 2px 9px;
+                }
+              }
+            }
           }
           &.feature-post{
             .wiget-body{

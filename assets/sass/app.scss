@@ -316,11 +316,19 @@ body{
 
           &.category{
             background-color: white;
+            .wiget-body{
+              padding: 15px;
+            }
             ul{
               li{
+                padding:8px 0;
+                font-size: 14px;
+                line-height: 20px;
+                border-bottom: 1px solid rgba(0,0,0,0.03);
                 span{
-                  background-color: gray;
-                  padding: 2px 4px;
+                  background-color: rgba(0,0,0,0.2);
+                  color:white;
+                  padding: 2px 9px;
                 }
               }
             }

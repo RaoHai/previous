@@ -1,0 +1,12 @@
+<% if (postcount) { %>
+	<div class="pagination">
+		<% var start = currentPage >=2 ? currentPage-2 :0 %>
+		<% var end = Math.ceil(postcount / 5) > start + 5 ? start :  Math.ceil(postcount / 5) %>
+		<% for (var i = start; i < end ; i++) { %>
+		<span <%= i === currentPage? 'current' : '' %>>
+			<a href='?page=<%= i %>'><%= i+1 %></a>
+		</span>
+		<% } %>
+		
+	</div>
+<% } %>

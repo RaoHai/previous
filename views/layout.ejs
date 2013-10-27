@@ -85,7 +85,7 @@
               <div class="wiget-body">
                 <ul>
                   <% _.each(categories, function (ct) { %>   
-                    <li><%= ct.category %> : <span class="right"> <%= ct.count %> </span></li>
+                    <li><a href='/posts/category/<%= ct.category %>'><%= ct.category %></a>  <span class="right"> <%= ct.count %> </span></li>
                   <% }) %>
                 </ul>
               </div>
