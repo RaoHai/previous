@@ -21,7 +21,6 @@ module.exports = (req, res, ok)->
 	req.app.locals.authenticated = req.session.authenticated
 
 
-	
 	Posts.native (err, collection)->
 		async.waterfall [
 			(next)->

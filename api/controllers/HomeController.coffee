@@ -1,7 +1,9 @@
 async = require 'async'
 
+
 HomeController = 
 	index : (req, res)->
+		
 		retvals = {}
 		Posts.native (err, collection)->
 			async.waterfall [
