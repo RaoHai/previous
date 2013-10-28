@@ -290,6 +290,23 @@ body{
           }
         }
       }
+      .comments{
+        padding: 40px 40px 0 40px;
+        background-color: white;
+        h3{
+          text-shadow: 0 1px 0 #fff;
+          margin: 10px 0;
+          color: #585858;
+          font-weight: 400;
+          font-size: 25px;
+        }
+        label{
+          margin-bottom: 10px;
+        }
+        button{
+          margin-top: 15px;
+        }
+      }
 
       aside.side-bar{
         margin-left: 30px;

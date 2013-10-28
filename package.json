@@ -12,7 +12,8 @@
         "moment":"",
         "optimist": "0.3.4",
         "sails-mongo":"0.9",
-        "async":""
+        "async":"",
+        "weibo":""
     },
     "scripts": {
         "start": "node app.js",

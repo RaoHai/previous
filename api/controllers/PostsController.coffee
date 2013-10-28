@@ -69,11 +69,25 @@ PostsController =
 				res.redirect '/posts/' + req.param 'id'
 
 	find : (req, res)->
-		Posts.findOne
-			ident : req.param 'id'
-		.done (err, post)->
+		retval = {}
+		async.waterfall [
+			(next)->
+				Posts.findOne
+					ident : req.param 'id'
+				.done (err, post)->
+					retval.post = post
+					next()
+			,(next)->
+				Comments.find
+					postid : req.param 'id'
+				.done (err, comments)->
+					retval.comments = comments
+					next()
+		], (err, result) ->
 			res.view
-				post : post
+				post : retval.post
+				comments: retval.comments
+					
 
 	tag : (req, res)->
 		res.send req.param 'id'
