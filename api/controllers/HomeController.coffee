@@ -2,14 +2,6 @@ async = require 'async'
 
 HomeController = 
 	index : (req, res)->
-		weibo.oauth
-			loginPath: '/login'
-			logoutPath: '/logout'
-			blogtypefield: 'type'
-			afterLogin: (req, res, callback)->
-				console.log 'login success' 
-			beforeLogout : (req, res, callback)->
-				console.log 'logout'
 		retvals = {}
 		Posts.native (err, collection)->
 			async.waterfall [
