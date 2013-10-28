@@ -1,0 +1,8 @@
+
+module.exports = 
+	attributes : 
+		username : 'STRING'
+		usertype : 'STRING'
+		email: 'STRING'
+		date: 'DATE'
+		text: 'STRING'

@@ -1,5 +1,7 @@
 moment = require 'moment'
 config_local = require '../../config/local'
+async = require 'async'
+
 module.exports = (req, res, ok)->
 	fmtDate = req.app.locals.fmtDate = (date, fmtstr)->
 		moment(date).format(fmtstr)
@@ -18,8 +20,20 @@ module.exports = (req, res, ok)->
 	req.app.locals.post
 	req.app.locals.authenticated = req.session.authenticated
 
-	Posts.find
-		featured : 'on'
-	.sort('date DESC').done (err, posts)->
-		req.app.locals.features = posts
-		ok()
+
+	
+	Posts.native (err, collection)->
+		async.waterfall [
+			(next)->
+				collection.group ['category'], {},{"count":0}, "function (obj, prev) { prev.count++; }" , (err, result) ->
+					req.app.locals.categories = result
+					next()
+			, (next)->
+				Posts.find
+					featured : 'on'
+				.sort('date DESC').done (err, posts)->
+					req.app.locals.features = posts
+					next()
+			] ,(err, result) ->
+				ok()
+
