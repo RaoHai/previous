@@ -1,5 +1,4 @@
 async = require 'async'
-connect = require 'connect'
 
 HomeController = 
 	index : (req, res)->
