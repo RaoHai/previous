@@ -34,6 +34,8 @@ UsersController =
         salt : randomStr
       .done (err, user)->
         res.send user
+  callback : (req, res)->
+    res.send 'hello world'
   
 
 module.exports = UsersController

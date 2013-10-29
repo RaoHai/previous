@@ -35,6 +35,10 @@ module.exports.routes = {
   '/': {
     controller : 'HomeController',
     action : 'index',
+  },
+  '/callback': {
+    controller: 'UsersController',
+    action: 'callback'
   }
 
   /*
