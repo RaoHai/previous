@@ -6,7 +6,7 @@ var fn = weibo.oauth({
 	blogtypeField: 'type',
 	callbackPath:'/callback',
 	afterLogin: function (req, res, callback) {
-		console.log(req.session.oauthUser.screen_name, 'login success');
+		console.log(req.session.oauthUser, 'login success');
 		return callback();
 	},
 	beforeLogout: function (req, res, callback) {
