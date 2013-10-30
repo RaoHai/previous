@@ -19,7 +19,10 @@ module.exports = (req, res, ok)->
 	req.app.locals.category = null;
 	req.app.locals.post
 	req.app.locals.authenticated = req.session.authenticated
-
+	if req.session.oauthUser
+		req.app.locals.oauthUser = req.session.oauthUser
+	else 
+		req.app.locals.oauthUser = false
 
 	Posts.native (err, collection)->
 		async.waterfall [

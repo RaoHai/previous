@@ -44,23 +44,23 @@
           <!-- end post -->
 
           <div class="comments">
+
             <h3>Leave a Reply</h3>
+            <% if (oauthUser || true ) { %>
             <form action="/comments/create">
-
               <div class="row collapse">
-                <div class="columns large-5">
-                  <label for="username">Name *</label>
-                  <input type="text" name='username'>
+              <div class="columns small-2">
+                <div class="avatar">
+                  <a href="<%= oauthUser.t_url %>">
+                    <img src="<%= oauthUser.avatar_hd || 'http://tp2.sinaimg.cn/1070446481/180/40011569017/1' %>" alt="">
+                  </a>
                 </div>
-                <div class="columns large-5">
-                  <label for="email">Email *</label>
-                  <input type="text" name='email'>
-                </div>
+                <strong class="name">
+                  <%= oauthUser.screen_name || "陆续" %>
+                </strong>
               </div>
-
-              <div class="row collapse">
-                <div class="columns large-12">
-                  <label for="text">Email *</label>
+                <div class="columns large-10">
+                  <label for="text">Comments Here</label>
                   <textarea name="text" id="" cols="30" rows="10"></textarea>
                 </div>
               </div>
@@ -70,6 +70,12 @@
                 </div>
               </div>
             </form>
+            <% } else { %>
+            <div class="weibo-loginlink">
+              <div><b>请先用新浪微博登录</b></div>
+              <a href='/users/login?type=weibo' target="_black"><img src="/images/weibo.png" alt=""></a>
+            </div>
+            <% } %>
           </div>
 
 

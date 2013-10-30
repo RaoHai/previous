@@ -293,6 +293,30 @@ body{
       .comments{
         padding: 40px 40px 0 40px;
         background-color: white;
+        .avatar{
+          float: left;
+          width: 60px;
+          height: 60px;
+          overflow: hidden;
+          border:2px solid white;
+          border-radius: 120px;
+          img{
+            width:50px;
+            height: 50px;
+            border-radius: 120px;
+            margin-top: 5px;
+            margin-left: 5px;
+          }
+        }
+        strong.name{
+          display: block;
+          margin-top: 5px;
+        }
+        .weibo-loginlink{
+          text-align: center;
+          padding-bottom: 50px;
+          margin-bottom: 50px;
+        }
         h3{
           text-shadow: 0 1px 0 #fff;
           margin: 10px 0;

@@ -7,10 +7,12 @@ var fn = weibo.oauth({
 	callbackPath:'/callback',
 	afterLogin: function (req, res, callback) {
 		console.log(req.session.oauthUser, 'login success');
+		req.app.locals.weiboauthen = true;
 		return callback();
 	},
 	beforeLogout: function (req, res, callback) {
 		console.log(req.session.oauthUser.screen_name, 'loging out');
+		req.app.locals.weiboauthen = false;
 		return callback();
 	}
 });
