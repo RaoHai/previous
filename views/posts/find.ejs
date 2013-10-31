@@ -45,7 +45,6 @@
 
           <div class="comments">
 
-            <h3>Leave a Reply</h3>
             <% if (oauthUser || true ) { %>
             <form action="/comments/create">
               <div class="row collapse">
@@ -60,6 +59,7 @@
                 </strong>
               </div>
                 <div class="columns large-10">
+                <h3>Leave a Reply</h3>
                   <label for="text">Comments Here</label>
                   <textarea name="text" id="" cols="30" rows="10"></textarea>
                 </div>
