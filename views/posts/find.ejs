@@ -51,10 +51,10 @@
   <div class="comment-author">
     <img class='avatar' src="<%= comment.avatar || 'http://tp2.sinaimg.cn/1070446481/180/40011569017/1'%>" alt="">
     <cite class="commenter"><a href='<%= comment.link %>'><%= comment.username %></a></cite>
-    <small class="muted"><%= comment.createdAt %></small>
+    <small class="muted"><%= fmtDate(comment.updatedAt,"MMM Do") %></small>
     </div>
     <div class="comment-content">
-      <%= comment.text %>
+      <%- comment.text %>
     </div>
   </article> 
   <% }) %>
