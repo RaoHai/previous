@@ -45,17 +45,17 @@
 
           <div class="comments">
 
-            <% if (oauthUser || true ) { %>
+            <% if (oauthUser ) { %>
             <form action="/comments/create">
               <div class="row collapse">
               <div class="columns small-2">
                 <div class="avatar">
                   <a href="<%= oauthUser.t_url %>">
-                    <img src="<%= oauthUser.avatar_hd || 'http://tp2.sinaimg.cn/1070446481/180/40011569017/1' %>" alt="">
+                    <img src="<%= oauthUser.avatar_hd %>" alt="">
                   </a>
                 </div>
                 <strong class="name">
-                  <%= oauthUser.screen_name || "陆续" %>
+                  <%= oauthUser.screen_name %>
                 </strong>
               </div>
                 <div class="columns large-10">
