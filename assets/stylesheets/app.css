@@ -7551,22 +7551,27 @@ body {
     position: relative;
   }
   /* line 313, ../sass/app.scss */
+  body .main .comments-list .comment-content {
+    color: #333333;
+    line-height: 150%;
+  }
+  /* line 317, ../sass/app.scss */
   body .main .comments-list .comment-author {
     position: relative;
     margin-bottom: 10px;
     position: relative;
   }
-  /* line 317, ../sass/app.scss */
+  /* line 321, ../sass/app.scss */
   body .main .comments-list .comment-author .commenter {
     color: #717171;
     font-size: 15px;
     font-weight: bold;
   }
-  /* line 322, ../sass/app.scss */
+  /* line 326, ../sass/app.scss */
   body .main .comments-list .comment-author .muted {
     color: #999999;
   }
-  /* line 325, ../sass/app.scss */
+  /* line 329, ../sass/app.scss */
   body .main .comments-list .comment-author img.avatar {
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
@@ -7579,12 +7584,12 @@ body {
     height: 45px;
     top: 0;
   }
-  /* line 335, ../sass/app.scss */
+  /* line 339, ../sass/app.scss */
   body .main .comments {
     padding: 40px 40px 0 40px;
     background-color: white;
   }
-  /* line 338, ../sass/app.scss */
+  /* line 342, ../sass/app.scss */
   body .main .comments .avatar {
     float: left;
     width: 60px;
@@ -7593,7 +7598,7 @@ body {
     border: 2px solid white;
     border-radius: 120px;
   }
-  /* line 345, ../sass/app.scss */
+  /* line 349, ../sass/app.scss */
   body .main .comments .avatar img {
     width: 50px;
     height: 50px;
@@ -7601,19 +7606,19 @@ body {
     margin-top: 5px;
     margin-left: 5px;
   }
-  /* line 353, ../sass/app.scss */
+  /* line 357, ../sass/app.scss */
   body .main .comments strong.name {
     display: block;
     margin-top: 65px;
     margin-left: 15px;
   }
-  /* line 358, ../sass/app.scss */
+  /* line 362, ../sass/app.scss */
   body .main .comments .weibo-loginlink {
     text-align: center;
     padding-bottom: 50px;
     margin-bottom: 50px;
   }
-  /* line 363, ../sass/app.scss */
+  /* line 367, ../sass/app.scss */
   body .main .comments h3 {
     text-shadow: 0 1px 0 #fff;
     margin: 10px 0;
@@ -7621,34 +7626,34 @@ body {
     font-weight: 400;
     font-size: 25px;
   }
-  /* line 370, ../sass/app.scss */
+  /* line 374, ../sass/app.scss */
   body .main .comments label {
     margin-bottom: 10px;
   }
-  /* line 373, ../sass/app.scss */
+  /* line 377, ../sass/app.scss */
   body .main .comments button {
     margin-top: 15px;
   }
-  /* line 378, ../sass/app.scss */
+  /* line 382, ../sass/app.scss */
   body .main aside.side-bar {
     margin-left: 30px;
   }
-  /* line 381, ../sass/app.scss */
+  /* line 385, ../sass/app.scss */
   body .main aside.side-bar .box {
     margin-top: 50px;
     position: relative;
     overflow: hidden;
     background: white;
   }
-  /* line 386, ../sass/app.scss */
+  /* line 390, ../sass/app.scss */
   body .main aside.side-bar .box:first-child {
     margin-top: 0;
   }
-  /* line 389, ../sass/app.scss */
+  /* line 393, ../sass/app.scss */
   body .main aside.side-bar .box .wiget-body {
     background-color: white;
   }
-  /* line 392, ../sass/app.scss */
+  /* line 396, ../sass/app.scss */
   body .main aside.side-bar .box .wiget-head {
     background: #FFFFFF;
     border-radius: 2px 2px 0 0;
@@ -7657,47 +7662,47 @@ body {
     line-height: 40px;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
   }
-  /* line 401, ../sass/app.scss */
+  /* line 405, ../sass/app.scss */
   body .main aside.side-bar .box.category {
     background-color: white;
   }
-  /* line 403, ../sass/app.scss */
+  /* line 407, ../sass/app.scss */
   body .main aside.side-bar .box.category .wiget-body {
     padding: 15px;
   }
-  /* line 407, ../sass/app.scss */
+  /* line 411, ../sass/app.scss */
   body .main aside.side-bar .box.category ul li {
     padding: 8px 0;
     font-size: 14px;
     line-height: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   }
-  /* line 412, ../sass/app.scss */
+  /* line 416, ../sass/app.scss */
   body .main aside.side-bar .box.category ul li span {
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
     padding: 2px 9px;
   }
-  /* line 421, ../sass/app.scss */
+  /* line 425, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body {
     position: relative;
     border-radius: 0 0 2px 2px;
     text-align: center;
     overflow: hidden;
   }
-  /* line 426, ../sass/app.scss */
+  /* line 430, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body img {
     height: 250px;
     max-width: none;
     min-width: 100%;
   }
-  /* line 431, ../sass/app.scss */
+  /* line 435, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery {
     width: 1000%;
     float: left;
     position: relative;
   }
-  /* line 435, ../sass/app.scss */
+  /* line 439, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery li {
     float: left;
     position: relative;
@@ -7705,15 +7710,15 @@ body {
     height: 250px;
     display: block;
   }
-  /* line 445, ../sass/app.scss */
+  /* line 449, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post:hover .arrow-left {
     left: 0px !important;
   }
-  /* line 448, ../sass/app.scss */
+  /* line 452, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post:hover .arrow-right {
     right: 0px !important;
   }
-  /* line 452, ../sass/app.scss */
+  /* line 456, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow {
     position: absolute;
     top: 50%;
@@ -7727,15 +7732,15 @@ body {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-  /* line 462, ../sass/app.scss */
+  /* line 466, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-left {
     left: -40px;
   }
-  /* line 465, ../sass/app.scss */
+  /* line 469, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-right {
     right: -40px;
   }
-  /* line 469, ../sass/app.scss */
+  /* line 473, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post h4 {
     position: absolute;
     top: 50%;
@@ -7745,19 +7750,19 @@ body {
     width: 100%;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   }
-  /* line 478, ../sass/app.scss */
+  /* line 482, ../sass/app.scss */
   body .main aside.side-bar .box.feature-post h4 a {
     color: white;
   }
-  /* line 485, ../sass/app.scss */
+  /* line 489, ../sass/app.scss */
   body .main aside.side-bar .box.about-me {
     background: white;
   }
-  /* line 487, ../sass/app.scss */
+  /* line 491, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body {
     position: relative;
   }
-  /* line 490, ../sass/app.scss */
+  /* line 494, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar {
     width: 100px;
     height: 100px;
@@ -7770,7 +7775,7 @@ body {
     -webkit-border-radius: 500px;
     border-radius: 500px;
   }
-  /* line 501, ../sass/app.scss */
+  /* line 505, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img {
     position: absolute;
     top: 5px;
@@ -7779,35 +7784,35 @@ body {
     -webkit-border-radius: 500px;
     border-radius: 500px;
   }
-  /* line 508, ../sass/app.scss */
+  /* line 512, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img#avatar {
     -webkit-animation: flip3 0.5s normal forwards;
     -moz-animation: flip3 0.5s normal forwards;
     -o-animation: flip3 0.5s normal forwards;
     animation: flip3 0.5s normal forwards;
   }
-  /* line 512, ../sass/app.scss */
+  /* line 516, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar img#weibo {
     -webkit-animation: flip4 0.25s normal forwards;
     -moz-animation: flip4 0.25s normal forwards;
     -o-animation: flip4 0.25s normal forwards;
     animation: flip4 0.25s normal forwards;
   }
-  /* line 518, ../sass/app.scss */
+  /* line 522, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#avatar {
     -webkit-animation: flip1 0.25s normal forwards;
     -moz-animation: flip1 0.25s normal forwards;
     -o-animation: flip1 0.25s normal forwards;
     animation: flip1 0.25s normal forwards;
   }
-  /* line 521, ../sass/app.scss */
+  /* line 525, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#weibo {
     -webkit-animation: flip2 0.5s normal forwards;
     -moz-animation: flip2 0.5s normal forwards;
     -o-animation: flip2 0.5s normal forwards;
     animation: flip2 0.5s normal forwards;
   }
-  /* line 526, ../sass/app.scss */
+  /* line 530, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio {
     padding-top: 50px;
     padding-left: 25px;
@@ -7815,7 +7820,7 @@ body {
     padding-bottom: 15px;
     color: #333;
   }
-  /* line 532, ../sass/app.scss */
+  /* line 536, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio h3 {
     text-align: center;
     margin: 10px 0;
@@ -7825,16 +7830,16 @@ body {
     font-size: 18px;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
   }
-  /* line 541, ../sass/app.scss */
+  /* line 545, ../sass/app.scss */
   body .main aside.side-bar .box.about-me .wiget-body .bio .muted {
     color: #999999;
   }
-  /* line 551, ../sass/app.scss */
+  /* line 555, ../sass/app.scss */
   body .main .pagination {
     margin: 20px 0;
     text-align: center;
   }
-  /* line 554, ../sass/app.scss */
+  /* line 558, ../sass/app.scss */
   body .main .pagination span {
     font-size: 18px;
     margin-right: 10px;
@@ -7847,7 +7852,7 @@ body {
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
-  /* line 563, ../sass/app.scss */
+  /* line 567, ../sass/app.scss */
   body .main .pagination span:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
