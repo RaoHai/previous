@@ -69,17 +69,21 @@ PostsController =
 				res.redirect '/posts/' + req.param 'id'
 
 	find : (req, res)->
+		if  req.param('id') == 'undefined'
+			res.send 'invalid param', 404
+			return
+		
 		retval = {}
 		async.waterfall [
 			(next)->
 				Posts.findOne
 					ident : req.param 'id'
-				.done (err, post)->
-					retval.post = post
-					next()
-			,(next)->
+				.done (err, _post)->
+					retval.post = _post
+					next(null, _post.id)
+			,(postid, next)->
 				Comments.find
-					postid : req.param 'id'
+					postid : postid
 				.done (err, comments)->
 					retval.comments = comments
 					next()

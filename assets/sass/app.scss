@@ -290,6 +290,48 @@ body{
           }
         }
       }
+      .comments-list
+      {
+        margin-bottom: 30px;
+        background-color: white;
+        border-radius: 2px;
+        padding: 10px 0;
+        .comments-title{
+          padding: 0 25px 10px;
+          text-align: center;
+          text-shadow: 0 1px 0 #fff;
+          color: #585858;
+          font-weight: 400;
+          font-size: 24.5px;
+        }
+        article{
+          background: #FFFFFF;
+          border-bottom: 1px solid #F4F4F4;
+          padding: 20px 10px 20px 80px;
+          position: relative;
+        }
+        .comment-author{
+          position: relative;
+          margin-bottom: 10px;
+          position: relative;
+          .commenter{
+            color: #717171;
+            font-size: 15px;
+            font-weight: bold;
+          }
+          .muted{
+            color: #999999;
+          }
+          img.avatar{
+            @include border-radius(500px);
+            position: absolute;
+            left: -60px;
+            width:45px;
+            height: 45px;
+            top: 0;
+          }
+        }
+      }
       .comments{
         padding: 40px 40px 0 40px;
         background-color: white;

@@ -1,82 +1,99 @@
 
-          <div class="post">
-            <div class="post-title">
-              <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
-              <h2 class="entry-title">
-               <a href='/posts/<%= post.ident %>'><%= post.title %> </a>
-              </h2>
-              <div class="post-meta">
-                <ul>
-                  <li><%= fmtDate(post.updatedAt,"MMM Do") %></li>
-                  <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
-                  <li>0 Comments</li>
-                </ul>
-              </div>
-              <% if (authenticated) { %>
-              <div class="post-action">
-                <a href='/posts/edit/<%= post.ident %>'><i class="icon-pencil"></i></a>
-              </div>
-              <% } %>
-            </div>
-             <% if (post.image){ %>
-            <div class="entry-image">
-              <img src="/<%= post.image %>" alt="">
-            </div>
-            <% } %>
-            <div class="entry-container">
-              <div class="entry-content">
-                <p><%- post.text %></p>
+<div class="post">
+  <div class="post-title">
+    <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
+    <h2 class="entry-title">
+     <a href='/posts/<%= post.ident %>'><%= post.title %> </a>
+   </h2>
+   <div class="post-meta">
+    <ul>
+      <li><%= fmtDate(post.updatedAt,"MMM Do") %></li>
+      <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
+      <li>0 Comments</li>
+    </ul>
+  </div>
+  <% if (authenticated) { %>
+  <div class="post-action">
+    <a href='/posts/edit/<%= post.ident %>'><i class="icon-pencil"></i></a>
+  </div>
+  <% } %>
+</div>
+<% if (post.image){ %>
+<div class="entry-image">
+  <img src="/<%= post.image %>" alt="">
+</div>
+<% } %>
+<div class="entry-container">
+  <div class="entry-content">
+    <p><%- post.text %></p>
 
-                <footer class="entry-meta clearfix">
-                  <ul class="tags">
-                    <li>Welcome</li>
-                  </ul>
-                  <div class="share-container">
-                    <h4>Share Story</h4>
-                    <ul class="share-story">
+    <footer class="entry-meta clearfix">
+      <ul class="tags">
+        <li>Welcome</li>
+      </ul>
+      <div class="share-container">
+        <h4>Share Story</h4>
+        <ul class="share-story">
 
-                    </ul>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-          <!-- end post -->
+        </ul>
+      </div>
+    </footer>
+  </div>
+</div>
+</div>
+<!-- end post -->
+<div class="comments-list">
+  <% if (comments.length >0 ){ %>
+  <div class="comments-title"><%= comments.length %> Comments</div> 
+  <% } %>
+  <% _.each(comments, function (comment) { %>
+  <article class="comment">
+  <div class="comment-author">
+    <img class='avatar' src="<%= comment.avatar || 'http://tp2.sinaimg.cn/1070446481/180/40011569017/1'%>" alt="">
+    <cite class="commenter"><a href='<%= comment.link %>'><%= comment.username %></a></cite>
+    <small class="muted"><%= comment.createdAt %></small>
+    </div>
+    <div class="comment-content">
+      <%= comment.text %>
+    </div>
+  </article> 
+  <% }) %>
+</div>
 
-          <div class="comments">
+<div class="comments">
 
-            <% if (oauthUser ) { %>
-            <form action="/comments/create">
-              <div class="row collapse">
-              <div class="columns small-2">
-                <div class="avatar">
-                  <a href="<%= oauthUser.t_url %>">
-                    <img src="<%= oauthUser.avatar_hd %>" alt="">
-                  </a>
-                </div>
-                <strong class="name">
-                  <%= oauthUser.screen_name %>
-                </strong>
-              </div>
-                <div class="columns large-10">
-                <h3>Leave a Reply</h3>
-                  <input type='hidden' name='postid' value="<%= post.id %>">
-                  <label for="text">Comments Here</label>
-                  <textarea name="text" id="" cols="30" rows="10"></textarea>
-                </div>
-              </div>
-              <div class="row collapse">
-                <div class="columns large-12">
-                  <button>Submit</button>
-                </div>
-              </div>
-            </form>
-            <% } else { %>
-            <div class="weibo-loginlink">
-              <div><b>请先用新浪微博登录</b></div>
-              <a href='/users/login?type=weibo' target="_black"><img src="/images/weibo.png" alt=""></a>
-            </div>
-            <% } %>
-          </div>
+  <% if (oauthUser ) { %>
+  <form action="/comments/create">
+    <div class="row collapse">
+      <div class="columns small-2">
+        <div class="avatar">
+          <a href="<%= oauthUser.t_url %>">
+            <img src="<%= oauthUser.avatar_hd %>" alt="">
+          </a>
+        </div>
+        <strong class="name">
+          <%= oauthUser.screen_name %>
+        </strong>
+      </div>
+      <div class="columns large-10">
+        <h3>Leave a Reply</h3>
+        <input type='hidden' name='postid' value="<%= post.id %>">
+        <label for="text">Comments Here</label>
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <div class="row collapse">
+      <div class="columns large-12">
+        <button>Submit</button>
+      </div>
+    </div>
+  </form>
+  <% } else { %>
+  <div class="weibo-loginlink">
+    <div><b>请先用新浪微博登录</b></div>
+    <a href='/users/login?type=weibo' target="_black"><img src="/images/weibo.png" alt=""></a>
+  </div>
+  <% } %>
+</div>
 
 
