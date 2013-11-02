@@ -7301,556 +7301,576 @@ body {
   border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent !important;
 }
 
+/* line 92, ../sass/app.scss */
+body .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* line 102, ../sass/app.scss */
+body header {
+  width: 100%;
+}
+/* line 105, ../sass/app.scss */
+body header .top-banner {
+  background: #444;
+  text-align: center;
+}
+/* line 108, ../sass/app.scss */
+body header .top-banner .container {
+  width: 940px;
+  margin: auto;
+}
+/* line 111, ../sass/app.scss */
+body header .top-banner .container a {
+  display: inline-block;
+}
+/* line 114, ../sass/app.scss */
+body header .top-banner .container img {
+  margin-top: 10px;
+}
+/* line 117, ../sass/app.scss */
+body header .top-banner .container h1 {
+  float: none;
+  display: block;
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+/* line 132, ../sass/app.scss */
+body .navigation {
+  opacity: 1;
+  min-height: 46px;
+  background-color: inherit;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  -webkit-transition: top 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
+}
+/* line 139, ../sass/app.scss */
+body .navigation .container {
+  width: 940px;
+  margin: auto;
+}
+/* line 143, ../sass/app.scss */
+body .navigation .container .mini-logo {
+  width: 115px;
+  float: left;
+  max-width: 200px;
+}
+/* line 149, ../sass/app.scss */
+body .navigation .container .top-bar {
+  float: left;
+}
+/* line 152, ../sass/app.scss */
+body .navigation .container .top-bar li a {
+  padding: 0px 25px;
+}
+/* line 154, ../sass/app.scss */
+body .navigation .container .top-bar li a:hover {
+  background-color: #f2f2f2;
+}
+/* line 159, ../sass/app.scss */
+body .navigation .container .top-bar ul.dropdown {
+  min-width: 210px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #45b0ee;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/* line 166, ../sass/app.scss */
+body .navigation .container .top-bar ul.dropdown li a {
+  font-size: 14px;
+  padding: 15px 20px;
+}
+/* line 177, ../sass/app.scss */
+body .main {
+  padding-top: 25px;
+  margin-bottom: 50px;
+  width: 940px;
+  margin: auto;
+}
+/* line 182, ../sass/app.scss */
+body .main .post {
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+/* line 188, ../sass/app.scss */
+body .main .post .post-title {
+  position: relative;
+  border-radius: 2px 2px 0 0;
+  margin: 0;
+}
+/* line 192, ../sass/app.scss */
+body .main .post .post-title h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 65px;
+  margin-left: 145px;
+}
+/* line 198, ../sass/app.scss */
+body .main .post .post-title .post-action {
+  float: left;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 2em;
+}
+/* line 205, ../sass/app.scss */
+body .main .post .post-title .post-meta {
+  position: absolute;
+  left: 0;
+  top: 71px;
+  color: #9a9a9a;
+  font-size: 14px;
+  height: 25px;
+}
+/* line 212, ../sass/app.scss */
+body .main .post .post-title .post-meta ul {
+  display: inline-block;
+  float: left;
+}
+/* line 215, ../sass/app.scss */
+body .main .post .post-title .post-meta ul li {
+  width: 100px;
+  text-align: right;
+  margin-right: 15px;
+  line-height: 20px;
+}
+/* line 222, ../sass/app.scss */
+body .main .post .post-title .post-meta:before, body .main .post .post-title .post-meta:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+/* line 229, ../sass/app.scss */
+body .main .post .post-title .author {
+  float: left;
+  margin-left: 50px;
+}
+/* line 232, ../sass/app.scss */
+body .main .post .post-title .author img {
+  border-radius: 500px;
+  height: 50px;
+}
+/* line 239, ../sass/app.scss */
+body .main .post .entry-image {
+  margin: 10px 70px 30px 145px;
+  overflow: hidden;
+  background: #F4F4F4;
+  max-height: 400px;
+}
+/* line 247, ../sass/app.scss */
+body .main .post .entry-container {
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+/* line 249, ../sass/app.scss */
+body .main .post .entry-container .entry-content {
+  padding: 0 70px 35px 145px;
+}
+/* line 251, ../sass/app.scss */
+body .main .post .entry-container .entry-content h1 {
+  font-size: 2em;
+}
+/* line 254, ../sass/app.scss */
+body .main .post .entry-container .entry-content h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+}
+/* line 258, ../sass/app.scss */
+body .main .post .entry-container .entry-content p {
+  font-size: 18px;
+  line-height: 36px;
+  color: #525252;
+}
+/* line 263, ../sass/app.scss */
+body .main .post .entry-container .entry-content textarea {
+  height: 300px;
+  resize: none;
+}
+/* line 267, ../sass/app.scss */
+body .main .post .entry-container .entry-content .entry-meta {
+  bottom: 20px;
+  margin-top: 25px;
+  position: relative;
+  border-radius: 0 0 2px 2px;
+}
+/* line 272, ../sass/app.scss */
+body .main .post .entry-container .entry-content .entry-meta ul.tags {
+  font-size: 18px;
+  line-height: 36px;
+  color: #525252;
+}
+/* line 277, ../sass/app.scss */
+body .main .post .entry-container .entry-content .entry-meta .share-container {
+  margin-top: 25px;
+}
+/* line 279, ../sass/app.scss */
+body .main .post .entry-container .entry-content .entry-meta .share-container h4 {
+  margin: 0;
+  padding-right: 15px;
+  display: inline-block;
+  line-height: 40px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 292, ../sass/app.scss */
+body .main .comments-list {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px 0;
+}
+/* line 297, ../sass/app.scss */
+body .main .comments-list .comments-title {
+  padding: 0 25px 10px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  color: #585858;
+  font-weight: 400;
+  font-size: 24.5px;
+}
+/* line 305, ../sass/app.scss */
+body .main .comments-list article {
+  background: #FFFFFF;
+  border-bottom: 1px solid #F4F4F4;
+  padding: 20px 10px 20px 80px;
+  position: relative;
+}
+/* line 311, ../sass/app.scss */
+body .main .comments-list .comment-content {
+  color: #333333;
+  line-height: 150%;
+}
+/* line 315, ../sass/app.scss */
+body .main .comments-list .comment-author {
+  position: relative;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* line 319, ../sass/app.scss */
+body .main .comments-list .comment-author .commenter {
+  color: #717171;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* line 324, ../sass/app.scss */
+body .main .comments-list .comment-author .muted {
+  color: #999999;
+}
+/* line 327, ../sass/app.scss */
+body .main .comments-list .comment-author img.avatar {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
+  position: absolute;
+  left: -60px;
+  width: 45px;
+  height: 45px;
+  top: 0;
+}
+/* line 337, ../sass/app.scss */
+body .main .comments {
+  padding: 40px 40px 0 40px;
+  background-color: white;
+}
+/* line 340, ../sass/app.scss */
+body .main .comments .avatar {
+  float: left;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border: 2px solid white;
+  border-radius: 120px;
+}
+/* line 347, ../sass/app.scss */
+body .main .comments .avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 120px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+/* line 355, ../sass/app.scss */
+body .main .comments strong.name {
+  display: block;
+  margin-top: 65px;
+  margin-left: 15px;
+}
+/* line 360, ../sass/app.scss */
+body .main .comments .weibo-loginlink {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+/* line 365, ../sass/app.scss */
+body .main .comments h3 {
+  text-shadow: 0 1px 0 #fff;
+  margin: 10px 0;
+  color: #585858;
+  font-weight: 400;
+  font-size: 25px;
+}
+/* line 372, ../sass/app.scss */
+body .main .comments label {
+  margin-bottom: 10px;
+}
+/* line 375, ../sass/app.scss */
+body .main .comments button {
+  margin-top: 15px;
+}
+/* line 380, ../sass/app.scss */
+body .main aside.side-bar {
+  margin-left: 30px;
+}
+/* line 383, ../sass/app.scss */
+body .main aside.side-bar .box {
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+/* line 388, ../sass/app.scss */
+body .main aside.side-bar .box:first-child {
+  margin-top: 0;
+}
+/* line 391, ../sass/app.scss */
+body .main aside.side-bar .box .wiget-body {
+  background-color: white;
+}
+/* line 394, ../sass/app.scss */
+body .main aside.side-bar .box .wiget-head {
+  background: #FFFFFF;
+  border-radius: 2px 2px 0 0;
+  padding: 5px 15px;
+  font-size: 18px;
+  line-height: 40px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
+}
+/* line 403, ../sass/app.scss */
+body .main aside.side-bar .box.category {
+  background-color: white;
+}
+/* line 405, ../sass/app.scss */
+body .main aside.side-bar .box.category .wiget-body {
+  padding: 15px;
+}
+/* line 409, ../sass/app.scss */
+body .main aside.side-bar .box.category ul li {
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+/* line 414, ../sass/app.scss */
+body .main aside.side-bar .box.category ul li span {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 2px 9px;
+}
+/* line 423, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post .wiget-body {
+  position: relative;
+  border-radius: 0 0 2px 2px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 428, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post .wiget-body img {
+  height: 250px;
+  max-width: none;
+  min-width: 100%;
+}
+/* line 433, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery {
+  width: 1000%;
+  float: left;
+  position: relative;
+}
+/* line 437, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery li {
+  float: left;
+  position: relative;
+  width: 10%;
+  height: 250px;
+  display: block;
+}
+/* line 447, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post:hover .arrow-left {
+  left: 0px !important;
+}
+/* line 450, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post:hover .arrow-right {
+  right: 0px !important;
+}
+/* line 454, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post .fixed-arrow {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  margin: 0;
+  font-size: 34px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 464, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-left {
+  left: -40px;
+}
+/* line 467, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-right {
+  right: -40px;
+}
+/* line 471, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post h4 {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  font-size: 30px;
+  color: white;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+/* line 480, ../sass/app.scss */
+body .main aside.side-bar .box.feature-post h4 a {
+  color: white;
+}
+/* line 487, ../sass/app.scss */
+body .main aside.side-bar .box.about-me {
+  background: white;
+}
+/* line 489, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body {
+  position: relative;
+}
+/* line 492, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: -45px;
+  margin-left: -50px;
+  padding: 5px;
+  background: white;
+  -webkit-border-radius: 500px;
+  border-radius: 500px;
+}
+/* line 503, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .avatar img {
+  position: absolute;
+  top: 5px;
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 500px;
+  border-radius: 500px;
+}
+/* line 510, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .avatar img#avatar {
+  -webkit-animation: flip3 0.5s normal forwards;
+  -moz-animation: flip3 0.5s normal forwards;
+  -o-animation: flip3 0.5s normal forwards;
+  animation: flip3 0.5s normal forwards;
+}
+/* line 514, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .avatar img#weibo {
+  -webkit-animation: flip4 0.25s normal forwards;
+  -moz-animation: flip4 0.25s normal forwards;
+  -o-animation: flip4 0.25s normal forwards;
+  animation: flip4 0.25s normal forwards;
+}
+/* line 520, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#avatar {
+  -webkit-animation: flip1 0.25s normal forwards;
+  -moz-animation: flip1 0.25s normal forwards;
+  -o-animation: flip1 0.25s normal forwards;
+  animation: flip1 0.25s normal forwards;
+}
+/* line 523, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#weibo {
+  -webkit-animation: flip2 0.5s normal forwards;
+  -moz-animation: flip2 0.5s normal forwards;
+  -o-animation: flip2 0.5s normal forwards;
+  animation: flip2 0.5s normal forwards;
+}
+/* line 528, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .bio {
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  color: #333;
+}
+/* line 534, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .bio h3 {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 400;
+  line-height: 40px;
+  padding: 5px 15px;
+  font-size: 18px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
+}
+/* line 543, ../sass/app.scss */
+body .main aside.side-bar .box.about-me .wiget-body .bio .muted {
+  color: #999999;
+}
+/* line 553, ../sass/app.scss */
+body .main .pagination {
+  margin: 20px 0;
+  text-align: center;
+}
+/* line 556, ../sass/app.scss */
+body .main .pagination span {
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 5px 13px;
+  display: inline-block;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 565, ../sass/app.scss */
+body .main .pagination span:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 @media screen and (min-width: 75em) {
-  /* line 94, ../sass/app.scss */
-  body .bg {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/bg.jpg);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  /* line 104, ../sass/app.scss */
-  body header {
-    width: 100%;
-  }
-  /* line 107, ../sass/app.scss */
-  body header .top-banner {
-    background: #444;
-    text-align: center;
-  }
-  /* line 110, ../sass/app.scss */
+  /* line 582, ../sass/app.scss */
   body header .top-banner .container {
     width: 1170px;
-    margin: auto;
   }
-  /* line 113, ../sass/app.scss */
-  body header .top-banner .container a {
-    display: inline-block;
-  }
-  /* line 116, ../sass/app.scss */
-  body header .top-banner .container img {
-    margin-top: 10px;
-  }
-  /* line 119, ../sass/app.scss */
-  body header .top-banner .container h1 {
-    float: none;
-    display: block;
-    position: relative;
-    font-size: 15px;
-    margin-bottom: 10px;
-    line-height: 40px;
-    color: #FFFFFF;
-    opacity: 0.7;
-  }
-  /* line 134, ../sass/app.scss */
-  body .navigation {
-    opacity: 1;
-    min-height: 46px;
-    background-color: inherit;
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset, 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
-    -webkit-transition: top 0.3s ease-in-out;
-    -moz-transition: top 0.3s ease-in-out;
-    -o-transition: top 0.3s ease-in-out;
-    transition: top 0.3s ease-in-out;
-  }
-  /* line 141, ../sass/app.scss */
+  /* line 589, ../sass/app.scss */
   body .navigation .container {
     width: 1170px;
-    margin: auto;
   }
-  /* line 145, ../sass/app.scss */
-  body .navigation .container .mini-logo {
-    width: 115px;
-    float: left;
-    max-width: 200px;
-  }
-  /* line 151, ../sass/app.scss */
-  body .navigation .container .top-bar {
-    float: left;
-  }
-  /* line 154, ../sass/app.scss */
-  body .navigation .container .top-bar li a {
-    padding: 0px 25px;
-  }
-  /* line 156, ../sass/app.scss */
-  body .navigation .container .top-bar li a:hover {
-    background-color: #f2f2f2;
-  }
-  /* line 161, ../sass/app.scss */
-  body .navigation .container .top-bar ul.dropdown {
-    min-width: 210px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-top: 2px solid #45b0ee;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  /* line 168, ../sass/app.scss */
-  body .navigation .container .top-bar ul.dropdown li a {
-    font-size: 14px;
-    padding: 15px 20px;
-  }
-  /* line 179, ../sass/app.scss */
+  /* line 593, ../sass/app.scss */
   body .main {
-    padding-top: 25px;
-    margin-bottom: 50px;
     width: 1170px;
-    margin: auto;
-  }
-  /* line 184, ../sass/app.scss */
-  body .main .post {
-    position: relative;
-    padding-top: 30px;
-    margin-bottom: 30px;
-    background-color: white;
-  }
-  /* line 190, ../sass/app.scss */
-  body .main .post .post-title {
-    position: relative;
-    border-radius: 2px 2px 0 0;
-    margin: 0;
-  }
-  /* line 194, ../sass/app.scss */
-  body .main .post .post-title h2 {
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 65px;
-    margin-left: 145px;
-  }
-  /* line 200, ../sass/app.scss */
-  body .main .post .post-title .post-action {
-    float: left;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    font-size: 2em;
-  }
-  /* line 207, ../sass/app.scss */
-  body .main .post .post-title .post-meta {
-    position: absolute;
-    left: 0;
-    top: 71px;
-    color: #9a9a9a;
-    font-size: 14px;
-    height: 25px;
-  }
-  /* line 214, ../sass/app.scss */
-  body .main .post .post-title .post-meta ul {
-    display: inline-block;
-    float: left;
-  }
-  /* line 217, ../sass/app.scss */
-  body .main .post .post-title .post-meta ul li {
-    width: 100px;
-    text-align: right;
-    margin-right: 15px;
-    line-height: 20px;
-  }
-  /* line 224, ../sass/app.scss */
-  body .main .post .post-title .post-meta:before, body .main .post .post-title .post-meta:after {
-    content: "";
-    display: table;
-    line-height: 0;
-  }
-  /* line 231, ../sass/app.scss */
-  body .main .post .post-title .author {
-    float: left;
-    margin-left: 50px;
-  }
-  /* line 234, ../sass/app.scss */
-  body .main .post .post-title .author img {
-    border-radius: 500px;
-    height: 50px;
-  }
-  /* line 241, ../sass/app.scss */
-  body .main .post .entry-image {
-    margin: 10px 70px 30px 145px;
-    overflow: hidden;
-    background: #F4F4F4;
-    max-height: 400px;
-  }
-  /* line 249, ../sass/app.scss */
-  body .main .post .entry-container {
-    background: none repeat scroll 0 0 #FFFFFF;
-  }
-  /* line 251, ../sass/app.scss */
-  body .main .post .entry-container .entry-content {
-    padding: 0 70px 35px 145px;
-  }
-  /* line 253, ../sass/app.scss */
-  body .main .post .entry-container .entry-content h1 {
-    font-size: 2em;
-  }
-  /* line 256, ../sass/app.scss */
-  body .main .post .entry-container .entry-content h2 {
-    font-size: 1.3em;
-    margin-bottom: 0.4em;
-  }
-  /* line 260, ../sass/app.scss */
-  body .main .post .entry-container .entry-content p {
-    font-size: 18px;
-    line-height: 36px;
-    color: #525252;
-  }
-  /* line 265, ../sass/app.scss */
-  body .main .post .entry-container .entry-content textarea {
-    height: 300px;
-    resize: none;
-  }
-  /* line 269, ../sass/app.scss */
-  body .main .post .entry-container .entry-content .entry-meta {
-    bottom: 20px;
-    margin-top: 25px;
-    position: relative;
-    border-radius: 0 0 2px 2px;
-  }
-  /* line 274, ../sass/app.scss */
-  body .main .post .entry-container .entry-content .entry-meta ul.tags {
-    font-size: 18px;
-    line-height: 36px;
-    color: #525252;
-  }
-  /* line 279, ../sass/app.scss */
-  body .main .post .entry-container .entry-content .entry-meta .share-container {
-    margin-top: 25px;
-  }
-  /* line 281, ../sass/app.scss */
-  body .main .post .entry-container .entry-content .entry-meta .share-container h4 {
-    margin: 0;
-    padding-right: 15px;
-    display: inline-block;
-    line-height: 40px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  /* line 294, ../sass/app.scss */
-  body .main .comments-list {
-    margin-bottom: 30px;
-    background-color: white;
-    border-radius: 2px;
-    padding: 10px 0;
-  }
-  /* line 299, ../sass/app.scss */
-  body .main .comments-list .comments-title {
-    padding: 0 25px 10px;
-    text-align: center;
-    text-shadow: 0 1px 0 #fff;
-    color: #585858;
-    font-weight: 400;
-    font-size: 24.5px;
-  }
-  /* line 307, ../sass/app.scss */
-  body .main .comments-list article {
-    background: #FFFFFF;
-    border-bottom: 1px solid #F4F4F4;
-    padding: 20px 10px 20px 80px;
-    position: relative;
-  }
-  /* line 313, ../sass/app.scss */
-  body .main .comments-list .comment-author {
-    position: relative;
-  }
-  /* line 315, ../sass/app.scss */
-  body .main .comments-list .comment-author .commenter {
-    color: #717171;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  /* line 320, ../sass/app.scss */
-  body .main .comments-list .comment-author .muted {
-    color: #999999;
-  }
-  /* line 323, ../sass/app.scss */
-  body .main .comments-list .comment-author img.avatar {
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    -ms-border-radius: 500px;
-    -o-border-radius: 500px;
-    border-radius: 500px;
-    position: absolute;
-    left: -60px;
-    width: 45px;
-    height: 45px;
-    top: 0;
-  }
-  /* line 333, ../sass/app.scss */
-  body .main .comments {
-    padding: 40px 40px 0 40px;
-    background-color: white;
-  }
-  /* line 336, ../sass/app.scss */
-  body .main .comments .avatar {
-    float: left;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    border: 2px solid white;
-    border-radius: 120px;
-  }
-  /* line 343, ../sass/app.scss */
-  body .main .comments .avatar img {
-    width: 50px;
-    height: 50px;
-    border-radius: 120px;
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-  /* line 351, ../sass/app.scss */
-  body .main .comments strong.name {
-    display: block;
-    margin-top: 65px;
-    margin-left: 15px;
-  }
-  /* line 356, ../sass/app.scss */
-  body .main .comments .weibo-loginlink {
-    text-align: center;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-  }
-  /* line 361, ../sass/app.scss */
-  body .main .comments h3 {
-    text-shadow: 0 1px 0 #fff;
-    margin: 10px 0;
-    color: #585858;
-    font-weight: 400;
-    font-size: 25px;
-  }
-  /* line 368, ../sass/app.scss */
-  body .main .comments label {
-    margin-bottom: 10px;
-  }
-  /* line 371, ../sass/app.scss */
-  body .main .comments button {
-    margin-top: 15px;
-  }
-  /* line 376, ../sass/app.scss */
-  body .main aside.side-bar {
-    margin-left: 30px;
-  }
-  /* line 379, ../sass/app.scss */
-  body .main aside.side-bar .box {
-    margin-top: 50px;
-    position: relative;
-    overflow: hidden;
-    background: white;
-  }
-  /* line 384, ../sass/app.scss */
-  body .main aside.side-bar .box:first-child {
-    margin-top: 0;
-  }
-  /* line 387, ../sass/app.scss */
-  body .main aside.side-bar .box .wiget-body {
-    background-color: white;
-  }
-  /* line 390, ../sass/app.scss */
-  body .main aside.side-bar .box .wiget-head {
-    background: #FFFFFF;
-    border-radius: 2px 2px 0 0;
-    padding: 5px 15px;
-    font-size: 18px;
-    line-height: 40px;
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
-  }
-  /* line 399, ../sass/app.scss */
-  body .main aside.side-bar .box.category {
-    background-color: white;
-  }
-  /* line 401, ../sass/app.scss */
-  body .main aside.side-bar .box.category .wiget-body {
-    padding: 15px;
-  }
-  /* line 405, ../sass/app.scss */
-  body .main aside.side-bar .box.category ul li {
-    padding: 8px 0;
-    font-size: 14px;
-    line-height: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-  }
-  /* line 410, ../sass/app.scss */
-  body .main aside.side-bar .box.category ul li span {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-    padding: 2px 9px;
-  }
-  /* line 419, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post .wiget-body {
-    position: relative;
-    border-radius: 0 0 2px 2px;
-    text-align: center;
-    overflow: hidden;
-  }
-  /* line 424, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post .wiget-body img {
-    height: 250px;
-    max-width: none;
-    min-width: 100%;
-  }
-  /* line 429, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery {
-    width: 1000%;
-    float: left;
-    position: relative;
-  }
-  /* line 433, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post .wiget-body .feature-gallery li {
-    float: left;
-    position: relative;
-    width: 10%;
-    height: 250px;
-    display: block;
-  }
-  /* line 443, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post:hover .arrow-left {
-    left: 0px !important;
-  }
-  /* line 446, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post:hover .arrow-right {
-    right: 0px !important;
-  }
-  /* line 450, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post .fixed-arrow {
-    position: absolute;
-    top: 50%;
-    height: 50px;
-    margin: 0;
-    font-size: 34px;
-    color: #fff;
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  /* line 460, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-left {
-    left: -40px;
-  }
-  /* line 463, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post .fixed-arrow.arrow-right {
-    right: -40px;
-  }
-  /* line 467, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post h4 {
-    position: absolute;
-    top: 50%;
-    margin-top: -15px;
-    font-size: 30px;
-    color: white;
-    width: 100%;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  }
-  /* line 476, ../sass/app.scss */
-  body .main aside.side-bar .box.feature-post h4 a {
-    color: white;
-  }
-  /* line 483, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me {
-    background: white;
-  }
-  /* line 485, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body {
-    position: relative;
-  }
-  /* line 488, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .avatar {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 50%;
-    top: -45px;
-    margin-left: -50px;
-    padding: 5px;
-    background: white;
-    -webkit-border-radius: 500px;
-    border-radius: 500px;
-  }
-  /* line 499, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .avatar img {
-    position: absolute;
-    top: 5px;
-    width: 90px;
-    height: 90px;
-    -webkit-border-radius: 500px;
-    border-radius: 500px;
-  }
-  /* line 506, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .avatar img#avatar {
-    -webkit-animation: flip3 0.5s normal forwards;
-    -moz-animation: flip3 0.5s normal forwards;
-    -o-animation: flip3 0.5s normal forwards;
-    animation: flip3 0.5s normal forwards;
-  }
-  /* line 510, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .avatar img#weibo {
-    -webkit-animation: flip4 0.25s normal forwards;
-    -moz-animation: flip4 0.25s normal forwards;
-    -o-animation: flip4 0.25s normal forwards;
-    animation: flip4 0.25s normal forwards;
-  }
-  /* line 516, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#avatar {
-    -webkit-animation: flip1 0.25s normal forwards;
-    -moz-animation: flip1 0.25s normal forwards;
-    -o-animation: flip1 0.25s normal forwards;
-    animation: flip1 0.25s normal forwards;
-  }
-  /* line 519, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .avatar:hover img#weibo {
-    -webkit-animation: flip2 0.5s normal forwards;
-    -moz-animation: flip2 0.5s normal forwards;
-    -o-animation: flip2 0.5s normal forwards;
-    animation: flip2 0.5s normal forwards;
-  }
-  /* line 524, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .bio {
-    padding-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    color: #333;
-  }
-  /* line 530, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .bio h3 {
-    text-align: center;
-    margin: 10px 0;
-    font-weight: 400;
-    line-height: 40px;
-    padding: 5px 15px;
-    font-size: 18px;
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06) inset;
-  }
-  /* line 539, ../sass/app.scss */
-  body .main aside.side-bar .box.about-me .wiget-body .bio .muted {
-    color: #999999;
-  }
-  /* line 549, ../sass/app.scss */
-  body .main .pagination {
-    margin: 20px 0;
-    text-align: center;
-  }
-  /* line 552, ../sass/app.scss */
-  body .main .pagination span {
-    font-size: 18px;
-    margin-right: 10px;
-    padding: 5px 13px;
-    display: inline-block;
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-radius: 2px 2px 2px 2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-  /* line 561, ../sass/app.scss */
-  body .main .pagination span:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
   }
 }

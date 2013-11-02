@@ -88,8 +88,6 @@ body{
 }
 
 
-
-@media screen and (min-width: 75em){
   body{
     .bg{
       width: 100%;
@@ -108,7 +106,7 @@ body{
         background: #444;
         text-align: center;
         .container{
-          width: 1170px;
+          width: 940px;
           margin: auto;
           a{
             display: inline-block;
@@ -139,7 +137,7 @@ body{
       @include transition(top 0.3s ease-in-out);
 
       .container{
-        width: 1170px;
+        width: 940px;
         margin: auto;
 
         .mini-logo{
@@ -179,7 +177,7 @@ body{
     .main{
       padding-top: 25px;
       margin-bottom: 50px;
-      width: 1170px;
+      width: 940px;
       margin: auto;
       .post{
         position: relative;
@@ -573,6 +571,30 @@ body{
     }
 
 
+  }
+
+
+
+@media screen and (min-width: 75em){
+  body{
+    header{
+      .top-banner{
+        .container{
+          width: 1170px;
+        }
+      }
+    }
+
+    .navigation{
+      .container{
+        width: 1170px;
+      }
+    }
+    .main{
+      width: 1170px;
+    }
+
+    
   }
 }
 

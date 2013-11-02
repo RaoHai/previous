@@ -36,10 +36,7 @@ module.exports.routes = {
     controller : 'HomeController',
     action : 'index',
   },
-  '/callback': {
-    controller: 'UsersController',
-    action: 'callback'
-  }
+  'get /callback': 'UsersController.callback'
 
   /*
   // But what if you want your home page to display
