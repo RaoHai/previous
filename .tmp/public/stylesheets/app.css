@@ -7886,18 +7886,35 @@ body .main .pagination span:hover {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
+/* line 591, ../sass/app.scss */
+body .footer {
+  background: #333333;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1) inset;
+  background: #333333;
+  position: relative;
+  color: #fff;
+}
+/* line 597, ../sass/app.scss */
+body .footer .container {
+  padding: 40px 0;
+  width: 1170px;
+}
 
 @media screen and (min-width: 75em) {
-  /* line 601, ../sass/app.scss */
+  /* line 612, ../sass/app.scss */
   body header .top-banner .container {
     width: 1170px;
   }
-  /* line 608, ../sass/app.scss */
+  /* line 619, ../sass/app.scss */
   body .navigation .container {
     width: 1170px;
   }
-  /* line 612, ../sass/app.scss */
+  /* line 623, ../sass/app.scss */
   body .main {
     width: 1170px;
+  }
+  /* line 627, ../sass/app.scss */
+  body .footer .container {
+    width: 940px;
   }
 }

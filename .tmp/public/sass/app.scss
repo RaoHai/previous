@@ -588,6 +588,17 @@ body{
     }
 
     }
+    .footer{
+      background: #333333;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.1) inset;
+      background: #333333;
+      position: relative;
+      color: #fff;
+      .container{
+        padding: 40px 0;
+        width:1170px;
+      }
+    }
 
 
   }
@@ -611,6 +622,11 @@ body{
     }
     .main{
       width: 1170px;
+    }
+    .footer{
+      .container{
+        width:940px;
+      }
     }
 
     
