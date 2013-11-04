@@ -25,7 +25,7 @@
  	var nav_top = $('.navigation').position().top;
  	$(window).scroll(function() {
  		if ($(window).scrollTop() > nav_top){
- 			$('.mini-logo').css({'width':'115px'});
+ 			$('.mini-logo').css({'width':'50px'});
  			$('.navigation').addClass('fixed-top');
  		} else {
  			$('.mini-logo').css({'width':'0'});
