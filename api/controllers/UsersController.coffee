@@ -3,6 +3,8 @@ shasum = crypto.createHash 'sha1';
 
 UsersController = 
   login : (req, res)->
+    res.send 'login....'
+  admin : (req, res)->
     switch req.method
       when "POST"
         Users.findOne

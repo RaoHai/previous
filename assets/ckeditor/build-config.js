@@ -40,10 +40,10 @@ var CKBUILDER_CONFIG = {
 		'dialogui' : 1,
 		'button' : 1,
 		'indent' : 1,
-		'fakeobjects' : 1
+		'fakeobjects' : 1,
+		'blockquote' : 1
 	},
 	languages : {
-		'zh-cn' : 1,
 		'en' : 1,
 	}
 };
