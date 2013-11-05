@@ -2,6 +2,24 @@ moment = require 'moment'
 fs = require 'fs'
 path = require 'path'
 util = require 'util'
+marked = require 'marked'
+marked.setOptions
+  gfm: true,
+  highlight: (code, lang, callback) ->
+    pygmentize
+    	lang: lang
+    	format: 'html'
+    , code, (err, result) ->
+    	if err
+    		return callback(err)
+    	callback null, result.toString()
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: true,
+  smartLists: true,
+  smartypants: false,
+  langPrefix: 'lang-'
 
 PostsController = 
 	create : (req, res)->
@@ -79,8 +97,10 @@ PostsController =
 				Posts.findOne
 					ident : req.param 'id'
 				.done (err, _post)->
-					retval.post = _post
-					next(null, _post.id)
+					marked _post.text ,(err,context)->
+						_post.parsedText = context
+						retval.post = _post
+						next(null, _post.id)
 			,(postid, next)->
 				Comments.find
 					postid : postid

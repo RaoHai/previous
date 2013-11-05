@@ -14,7 +14,8 @@
         "sails-mongo":"0.9",
         "async":"",
         "weibo":"",
-        "connect":""
+        "connect":"",
+        "marked":"2.1.0"
     },
     "scripts": {
         "start": "node app.js",
