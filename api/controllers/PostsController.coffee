@@ -2,24 +2,18 @@ moment = require 'moment'
 fs = require 'fs'
 path = require 'path'
 util = require 'util'
+pygmentize = require 'pygmentize'
 marked = require 'marked'
-marked.setOptions
-  gfm: true,
-  highlight: (code, lang, callback) ->
-    pygmentize
-    	lang: lang
-    	format: 'html'
-    , code, (err, result) ->
-    	if err
-    		return callback(err)
-    	callback null, result.toString()
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  sanitize: true,
-  smartLists: true,
-  smartypants: false,
-  langPrefix: 'lang-'
+hljs = require 'highlight.js'
+
+
+marked.setOptions({
+ 	highlight: (code, lang) ->
+ 		console.log(hljs.highlightAuto(lang, code));
+ 		return hljs.highlight(lang, code).value;
+});
+
+
 
 PostsController = 
 	create : (req, res)->
@@ -97,10 +91,19 @@ PostsController =
 				Posts.findOne
 					ident : req.param 'id'
 				.done (err, _post)->
-					marked _post.text ,(err,context)->
-						_post.parsedText = context
+					marked( _post.text, (err, content)->
+						if (err) 
+							throw err;
+						_post.parsedText = content
 						retval.post = _post
 						next(null, _post.id)
+					)
+					# marked _post.text , (err, context)->
+					# 	console.log(err, context)
+					# 	_post.parsedText = context
+					# 	retval.post = _post
+					# 	next(null, _post.id)
+					# return undefined
 			,(postid, next)->
 				Comments.find
 					postid : postid

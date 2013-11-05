@@ -1,28 +1,30 @@
 {
-    "name": "previous",
-    "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
-    "dependencies": {
-        "sails": "0.9.4",
-        "grunt": "0.4.1",
-        "sails-disk": "~0.9.0",
-        "ejs": "0.8.4",
-        "ejs-locals": "~1.0.2",
-        "moment":"",
-        "optimist": "0.3.4",
-        "sails-mongo":"0.9",
-        "async":"",
-        "weibo":"",
-        "connect":"",
-        "marked":"2.1.0"
-    },
-    "scripts": {
-        "start": "node app.js",
-        "debug": "node debug app.js"
-    },
-    "main": "app.js",
-    "repository": "",
-    "author": "",
-    "license": ""
+  "name": "previous",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "dependencies": {
+    "sails": "0.9.4",
+    "grunt": "0.4.1",
+    "sails-disk": "~0.9.0",
+    "ejs": "0.8.4",
+    "ejs-locals": "~1.0.2",
+    "moment": "",
+    "optimist": "0.3.4",
+    "sails-mongo": "0.9",
+    "async": "",
+    "weibo": "",
+    "connect": "",
+    "marked": "~0.2.10",
+    "pygmentize": "0.5.3",
+    "highlight.js":"7.4.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "repository": "",
+  "author": "",
+  "license": ""
 }
