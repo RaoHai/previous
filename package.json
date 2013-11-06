@@ -15,7 +15,7 @@
     "async": "",
     "weibo": "",
     "connect": "",
-    "marked": "~0.2.10",
+    "marked": "",
     "pygmentize": "0.5.3",
     "highlight.js":"7.4.0"
   },
