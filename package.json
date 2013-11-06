@@ -17,10 +17,11 @@
     "connect": "",
     "marked": "",
     "pygmentize": "0.5.3",
-    "highlight.js":"7.4.0"
+    "highlight.js": "7.4.0"
   },
-  "devDependencies":{
-    "grunt":"~0.4.1"
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.5"
   },
   "scripts": {
     "start": "node app.js",

@@ -133,6 +133,7 @@ module.exports = function (grunt) {
   grunt.loadTasks(depsPath + '/grunt-contrib-cssmin/tasks');
   grunt.loadTasks(depsPath + '/grunt-contrib-less/tasks');
   grunt.loadTasks(depsPath + '/grunt-contrib-coffee/tasks');
+
   grunt.loadNpmTasks('grunt-contrib-compass');
 
   // Project configuration.
@@ -244,8 +245,8 @@ module.exports = function (grunt) {
 
     uglify: {
       dist: {
-        src: ['.tmp/public/concat/production.js'],
-        dest: '.tmp/public/min/production.js'
+        src: ['assets/js/vendor/zepto.js','assets/js/app.js'],
+        dest: 'assets/js/app.min.js'
       }
     },
 
@@ -422,6 +423,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'compileAssets',
     'linkAssets',
+    'uglify',
     'watch'
   ]);
 
