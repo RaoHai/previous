@@ -133,6 +133,7 @@ module.exports = function (grunt) {
   grunt.loadTasks(depsPath + '/grunt-contrib-cssmin/tasks');
   grunt.loadTasks(depsPath + '/grunt-contrib-less/tasks');
   grunt.loadTasks(depsPath + '/grunt-contrib-coffee/tasks');
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
   // Project configuration.
   grunt.initConfig({
@@ -178,7 +179,15 @@ module.exports = function (grunt) {
         }
       }
     },
-
+     compass: {
+        compile: {
+            options: {
+              basePath: 'assets/',
+              config: 'assets/config.prod.rb',
+              force: true
+            }
+        }
+    },
     less: {
       dev: {
         files: [
@@ -420,6 +429,7 @@ module.exports = function (grunt) {
     'clean:dev',
     'jst:dev',
     'less:dev',
+    'compass',
     'copy:dev',    
     'coffee:dev'
   ]);
@@ -450,6 +460,7 @@ module.exports = function (grunt) {
     'clean:dev',
     'jst:dev',
     'less:dev',
+    'compass',
     'copy:dev',
     'coffee:dev',
     'concat',

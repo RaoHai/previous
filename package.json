@@ -1,7 +1,7 @@
 {
   "name": "previous",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "a Sails application",
   "dependencies": {
     "sails": "0.9.4",
@@ -18,6 +18,9 @@
     "marked": "",
     "pygmentize": "0.5.3",
     "highlight.js":"7.4.0"
+  },
+  "devDependencies":{
+    "grunt":"~0.4.1"
   },
   "scripts": {
     "start": "node app.js",
