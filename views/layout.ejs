@@ -103,6 +103,7 @@
       Copyright © 2013 · www.previous-blog.com
   </div>
 </div>
+  <% if (env === 'development') { %>
   <script src=<%- cdn("/js/vendor/zepto.js") %>></script>
   <script src=<%- cdn("/js/foundation/foundation.js") %>></script>
   <script src=<%- cdn("/js/foundation/foundation.alerts.js") %>></script>
@@ -121,7 +122,9 @@
 
  
   <script src=<%- cdn("/js/app.js") %>></script>
-
+<% } else { %>
+ <script src=<%- cdn("/js/app.min.js") %>></script>
+<% } %>
   <script type="text/javascript">
 
   $(function(){

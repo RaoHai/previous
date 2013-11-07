@@ -16,6 +16,8 @@ module.exports = (req, res, ok)->
 	cdn = req.app.locals.cdn = (url) ->
 		return url# + '?v=' + Math.random()
 
+	req.app.locals.env = process.env.NODE_ENV
+	 
 	req.app.locals.category = null;
 	req.app.locals.post
 	req.app.locals.authenticated = req.session.authenticated

@@ -245,7 +245,7 @@ module.exports = function (grunt) {
 
     uglify: {
       dist: {
-        src: ['assets/js/vendor/zepto.js','assets/js/app.js'],
+        src: ['assets/js/vendor/zepto.js','assets/js/foundation/foundation.js','assets/js/foundation/foundation.*.js','assets/js/app.js'],
         dest: 'assets/js/app.min.js'
       }
     },
