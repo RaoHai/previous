@@ -1,9 +1,12 @@
 // Global Foundation Settings
 @import "settings";
+@import "monokai_sublime";
+@import "font-awesome";
 @import "foundation";
 @import "fonts";
 @import "compass/reset";
 @import "compass/css3";
+
 a{
   text-decoration: none;
 }
