@@ -14,7 +14,7 @@ module.exports = (req, res, ok)->
 		return ptext	
 
 	cdn = req.app.locals.cdn = (url) ->
-		return url# + '?v=' + Math.random()
+		return "http://www.previous-blog.com" + url# + '?v=' + Math.random()
 
 	req.app.locals.env = process.env.NODE_ENV
 	 
