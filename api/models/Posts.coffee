@@ -8,4 +8,5 @@ module.exports =
 		image:	'STRING'
 		featured : 'BOOLEAN'
 		category: 'STRING'
+		comments: 'NUMBER'
 		tag:	'STRING'

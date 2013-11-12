@@ -85,6 +85,7 @@ PostsController =
 			return
 		
 		retval = {}
+
 		async.waterfall [
 			(next)->
 				Posts.findOne

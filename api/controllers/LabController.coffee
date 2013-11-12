@@ -1,10 +1,7 @@
-LabController.coffee
 
-
-LabController = (req, res , ok)->
+LabsController =
 	find : (req, res)->
 		res.send "Lab~"
 
 
-
-module.exports = LabController
+module.exports = LabsController
