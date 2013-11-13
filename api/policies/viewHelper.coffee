@@ -7,6 +7,8 @@ module.exports = (req, res, ok)->
 		moment(date).format(fmtstr)
 
 	textSummary = req.app.locals.textSummary = (text) ->
+		if !text
+			return
 		subtext = text.substr(0 ,500) + '...'
 		ptext = text.split('\n').slice(0,8).join('\n')
 		if subtext.length < ptext.length
