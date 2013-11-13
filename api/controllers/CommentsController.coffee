@@ -1,3 +1,4 @@
+ObjectID = require('mongodb').ObjectID,
 
 CommentsController = 
 	find : (req, res) ->
@@ -11,7 +12,7 @@ CommentsController =
 		user = req.session.oauthUser
 		Posts.native (err, collection)->
 			query = 
-				_id : req.param 'postid'
+				_id : ObjectID(req.param 'postid')
 			sort = []
 			update = 
 				"$inc":
