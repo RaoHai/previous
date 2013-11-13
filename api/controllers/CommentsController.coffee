@@ -11,7 +11,7 @@ CommentsController =
 		user = req.session.oauthUser
 		Posts.native (err, collection)->
 			query = 
-				id : req.param 'postid'
+				_id : req.param 'postid'
 			sort = []
 			update = 
 				"$inc":
