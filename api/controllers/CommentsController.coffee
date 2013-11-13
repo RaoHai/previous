@@ -1,6 +1,6 @@
-ObjectID = require('mongodb').ObjectID,
+ObjectID = require('mongodb').ObjectID
 
-CommentsController = 
+CommentsController =
 	find : (req, res) ->
 		console.log req.param 'id'
 		Comments.find
@@ -19,7 +19,8 @@ CommentsController =
 					comments : 1
 			option = 
 				new : true
-				upsert:true
+				upsert : true
+
 			collection.findAndModify query, sort, update, option, (err, result)->
 				console.log(err, result)
 
