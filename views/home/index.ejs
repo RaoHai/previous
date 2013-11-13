@@ -9,7 +9,7 @@
         <ul>
           <li><%= fmtDate(post.updatedAt,"MMM Do") %></li>
           <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
-          <li>0 Comments</li>
+          <li><%= post.comments || 0 %> Comments</li>
         </ul>
       </div>
       <% if (authenticated) { %>

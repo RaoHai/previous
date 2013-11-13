@@ -10,15 +10,15 @@ CommentsController =
 	create : (req, res)->
 		user = req.session.oauthUser
 		Posts.native (err, collection)->
-		query = 
-			ident : req.param 'postid'
-		sort = []
-		update = 
-			"$inc":
-				comments : 1
+			query = 
+				ident : req.param 'postid'
+			sort = []
+			update = 
+				"$inc":
+					comments : 1
 
-		collection.findAndModify query, sort, update, (err, result)->
-			console.log(err, result)
+			collection.findAndModify query, sort, update, (err, result)->
+				console.log(err, result)
 			
 		Comments.create
 			username : user.screen_name
