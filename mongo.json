@@ -1,1 +1,0 @@
-{ "_id" : { "$oid" : "52540ca1e1320ad4426b7205" }, "title" : "hello world", "ident" : "hello-world", "text" : "This is first post", "date" : { "$date" : 1381239969352 } }

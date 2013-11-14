@@ -1,2 +1,0 @@
-# previous
-### a Sails application
