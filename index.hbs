@@ -1,40 +1,48 @@
 {{!< default}}
+{{#foreach posts}}
+<div class="post {{post_class}}">
+    <div class="post-title">
+        {{#if author}}
+        <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
+        <a href="#">{{author.name}}</a>
+        <a href="#">{{author.bio}}</a>
+        {{/if}}
+        <h2 class="entry-title">
+            <a href='/posts/<%= post.ident %>'>{{{title}}} </a>
+        </h2>
+        <div class="post-meta">
+            <ul>
+                <li>{{date format="DD MMM YYYY"}}</li>
+                <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
+                <li><%= post.comments || 0 %> Comments</li>
+            </ul>
+        </div>
 
-{{! The comment above "< default" means - insert everything in this file into
-    the {body} of the default.hbs template, which contains our header/footer. }}
+    </div>
+    <% if (post.image){ %>
+    <div class="entry-image">
 
-{{! The big featured header on the homepage, with the site logo and description }}
-<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-    <div class="vertical">
-        <div id="site-head-content" class="inner">
+        <img src="/<%= post.image %>" alt="">
 
-            {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-            <h1 class="blog-title">{{@blog.title}}</h1>
-            <h2 class="blog-description">{{@blog.description}}</h2>
+    </div>
+    <% } %>
+    <div class="entry-container">
+        <div class="entry-content">
+            <p><%- textSummary(post.text) %></p>
+
+            <footer class="entry-meta clearfix">
+                <ul class="tags">
+                    <li>Welcome</li>
+                </ul>
+                <div class="share-container">
+                    <h4>Share Story</h4>
+                    <ul class="share-story">
+
+                    </ul>
+                </div>
+            </footer>
         </div>
     </div>
-</header>
-
-{{! The main content area on the homepage }}
-<main class="content" role="main">
-
-    {{! Each post will be output using this markup }}
-    {{#foreach posts}}
-
-    <article class="{{post_class}}">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
-            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-
-        </header>
-        <section class="post-excerpt">
-            <p>{{excerpt}}&hellip;</p>
-        </section>
-    </article>
-
-    {{/foreach}}
-
-    {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}}
-
-</main>
+</div>
+{{/foreach}}
+{{pagination}}
