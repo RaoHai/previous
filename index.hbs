@@ -1,48 +1,56 @@
 {{!< default}}
+
 {{#foreach posts}}
 <div class="post {{post_class}}">
-    <div class="post-title">
-        {{#if author}}
-        <a href="#" class="author"><img src="/images/avatar.jpg" alt=""></a>
-        <a href="#">{{author.name}}</a>
-        <a href="#">{{author.bio}}</a>
-        {{/if}}
-        <h2 class="entry-title">
-            <a href='/posts/<%= post.ident %>'>{{{title}}} </a>
-        </h2>
-        <div class="post-meta">
-            <ul>
-                <li>{{date format="DD MMM YYYY"}}</li>
-                <li><a href='/posts/category/<%= post.category %>'><%= post.category %></a></li>
-                <li><%= post.comments || 0 %> Comments</li>
-            </ul>
-        </div>
+	<div class="post-meta">
+			<ul>
+				<li><span class='Month'>{{date format="MMM"}}</span></li>
+				<li><span class="Day">{{date format="DD"}}</span></li>
+				<li><span class='Year'>{{date format="YYYY"}}</span></li>
+				<li><a class='author' href='mailto:{{author.email}}'>{{author.name}}</a></li>
+			</ul>
+	</div>
+	<div class="post-title">
+		<h2 class="entry-title">
+			<a href='{{url}}'>{{{title}}} </a>
+		</h2>
+	</div>
+	
+	<div class="entry-container">
+	<div class="entry-image">
+		{{{content images="1"}}}
+	</div>
+		<div class="entry-content">
+			<p>{{{content words="100"}}}</p>
 
-    </div>
-    <% if (post.image){ %>
-    <div class="entry-image">
-
-        <img src="/<%= post.image %>" alt="">
-
-    </div>
-    <% } %>
-    <div class="entry-container">
-        <div class="entry-content">
-            <p><%- textSummary(post.text) %></p>
-
-            <footer class="entry-meta clearfix">
-                <ul class="tags">
-                    <li>Welcome</li>
-                </ul>
-                <div class="share-container">
-                    <h4>Share Story</h4>
-                    <ul class="share-story">
-
-                    </ul>
-                </div>
-            </footer>
-        </div>
-    </div>
+			<footer class="entry-meta clearfix">
+				<ul class="tags">
+					{{#tags}}
+					<li>{{name}}</li>
+					{{/tags}}
+				</ul>
+				<div class="share-container">
+		            <section class="share">
+	                <h4>Share this post</h4>
+	                <div class="icons">
+	                <a class="sprite-icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+	                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	                    <span class="hidden">Twitter</span>
+	                </a>
+	                <a class="sprite-icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+	                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	                    <span class="hidden">Facebook</span>
+	                </a>
+	                <a class="sprite-icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+	                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	                    <span class="hidden">Google+</span>
+	                </a>
+	                </div>
+	            </section>
+				</div>
+			</footer>
+		</div>
+	</div>
 </div>
 {{/foreach}}
 {{pagination}}
