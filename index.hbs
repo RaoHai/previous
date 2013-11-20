@@ -21,7 +21,11 @@
 		{{{content images="1"}}}
 	</div>
 		<div class="entry-content">
-			<p>{{{content words="100"}}}</p>
+			{{#compare language "zh_cn" operator="=="}}
+			<p>{{{content characters=350}}}</p>...
+			{{else}}
+			<p>{{{content words=100}}}</p>...
+			{{/compare}}
 
 			<footer class="entry-meta clearfix">
 				<ul class="tags">
@@ -31,7 +35,7 @@
 				</ul>
 				<div class="share-container">
 		            <section class="share">
-	                <h4>Share this post</h4>
+	                <h5>Share this post</h5>
 	                <div class="icons">
 	                <a class="sprite-icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
 	                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">

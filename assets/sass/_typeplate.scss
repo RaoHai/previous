@@ -36,7 +36,7 @@
 //the var must be placed after your @import "typeplate.scss";
 $serif-boolean: true !default;
 
-$font-family: if($serif-boolean, serif, sans-serif) !default; // Non-font-face font-stack
+$font-family: if($serif-boolean, 'serif', sans-serif) !default; // Non-font-face font-stack
 
 $font-weight: normal !default;
 $line-height: 1.65 !default;

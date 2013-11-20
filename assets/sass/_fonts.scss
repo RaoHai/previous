@@ -7,3 +7,10 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('/assets/fonts/SourceSansPro-Light.eot');
+	src: local('☺'), url('/assets/fonts/SourceSansPro-Light.otf.woff') format('woff'), url('/assets/fonts/SourceSansPro-Light.ttf.woff') format('truetype'), url('/assets/fonts/SourceSansPro-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}

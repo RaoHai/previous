@@ -57,6 +57,21 @@
                     </div>
                 </div>
                 <div class="box about-me">
+                    {{#post}}
+                    <img id="profile" src="{{author.cover}}" alt="">
+                    <div class="wiget-body">
+                      <div class="avatar">
+                        <a href='{{author.website}}'>
+                            <img src="{{author.image}}" alt="" id="avatar">
+                            <img src="{{@blog.logo}}" alt="" id='weibo'>
+                        </a>
+                      </div>
+                      <div class="bio">
+                            <a href='{{author.website}}'><h3>{{author.name}}</h3></a>
+                            <p class="muted">{{author.bio}}</p>
+                      </div>
+                    </div>
+                    {{else}}
                     <img id="profile" src="{{posts.[0].author.cover}}" alt="">
                     <div class="wiget-body">
                       <div class="avatar">
@@ -70,11 +85,17 @@
                             <p class="muted">{{posts.[0].author.bio}}</p>
                       </div>
                     </div>
+                    {{/post}}
                 </div>
 
             </aside>
             </div>
         </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+          {{> footer}}
+      </div>
     </div>
     <script src="/assets/js/vendor/zepto.js"></script>
     <script src="/assets/js/foundation/foundation.js"></script>
