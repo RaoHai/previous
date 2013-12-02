@@ -10233,9 +10233,9 @@ body .main .post .entry-container .entry-content h2 {
 }
 /* line 315, ../sass/app.scss */
 body .main .post .entry-container .entry-content p {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 300;
-  line-height: 1.3em;
+  line-height: 1.7em;
   margin: 25px 0;
   color: #555555;
 }
