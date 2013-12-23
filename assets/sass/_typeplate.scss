@@ -644,6 +644,7 @@ xmp {
 // -------------------------------------//
 
 pre code {
+
 	@extend %normal-wrap;
 	@include white-space(pre-wrap);
 }
@@ -654,7 +655,7 @@ pre {
 
 code {
 	@include white-space(pre);
-	font-family: monospace;
+	font-family: 'Ubuntu';
 }
 
 
