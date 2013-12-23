@@ -1,4 +1,4 @@
- $(document).foundation();
+
 
  $(function(){
 
@@ -33,5 +33,5 @@
  	// 	}
  	// });
 
-
+  hljs.initHighlightingOnLoad();
  });

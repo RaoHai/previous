@@ -1,43 +1,55 @@
 {{!< default}}
-{{> header}}
-<main class="main_uber" role="main">
+
 {{#post}}
-<article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article">
-<header class="postheader_uber">
-<time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
-<h1 class="posttitle_uber" itemprop="headline">{{title}}</h1>
-</header>
-<div class="postcontent_uber" itemprop="articleBody">
-{{content}}
-</div>
-{{#if tags}}
-<div class="posttags_uber">
-Tags: {{tags separator=" | "}}
-</div>
-{{/if}}
-	<div class="sharepost_uber">
-	<h4 class="share_uber">Share this post: &nbsp;</h4>
-	<a class="share_uber icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_uber">Twitter</span></a>
-	<a class="share_uber icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_uber">Facebook</span></a>
-	<a class="share_uber icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_uber">Google+</span></a>
+<div class="post {{post_class}}">
+	<div class="post-meta">
+			<ul>
+				<li><span class='Month'>{{date format="MMM"}}</span></li>
+				<li><span class="Day">{{date format="DD"}}</span></li>
+				<li><span class='Year'>{{date format="YYYY"}}</span></li>
+				<li><a class='author' href='mailto:{{author.email}}'>{{author.name}}</a></li>
+			</ul>
 	</div>
-		{{#if author}}
-		<footer class="postfooter_uber">
-		<address itemscope itemtype="http://schema.org/Person">
-		{{#if author.image}}
-		<div class="authorimage_uber"><img src="{{author.image}}" itemprop="image" /></div>
-		{{/if}}
-		<h4 class="authorname_uber"><span itemprop="author">{{author.name}}</span></h4>
-		{{#if author.website}}
-		<div class="authorwebsite_uber"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
-		{{/if}}
-		</address>
-		<div class="authorbio_uber">
-		<p>{{author.bio}}</p>
+	<div class="post-title">
+		<h2 class="entry-title">
+			<a href='{{url}}'>{{{title}}} </a>
+		</h2>
+	</div>
+	
+	<div class="entry-container">
+
+		<div class="entry-content">
+			{{content}}
+
+			<footer class="entry-meta clearfix">
+				<ul class="tags">
+					{{#tags}}
+					<li>{{name}}</li>
+					{{/tags}}
+				</ul>
+				<div class="share-container">
+		            <section class="share">
+	                <h5>Share this post</h5>
+	                <div class="icons">
+	                <a class="sprite-icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+	                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+	                    <span class="hidden">Twitter</span>
+	                </a>
+	                <a class="sprite-icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+	                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+	                    <span class="hidden">Facebook</span>
+	                </a>
+	                <a class="sprite-icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+	                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+	                    <span class="hidden">Google+</span>
+	                </a>
+	                </div>
+	            </section>
+				</div>
+			</footer>
 		</div>
-		</footer>
-		{{/if}}
-</article>
+	</div>
+</div>
 {{/post}}
 {{#if pagination}}
 <div class="pagination_uber">
@@ -45,4 +57,3 @@ Tags: {{tags separator=" | "}}
 </div>
 {{/if}}
 </main>
-{{> footer}}

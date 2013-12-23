@@ -5,9 +5,9 @@
 @import "foundation";
 @import "fonts";
 @import "sprite";
-
 @import "compass/reset";
 @import "compass/css3";
+
 
 a{
   text-decoration: none;
@@ -16,6 +16,7 @@ a{
 body{
   font-family: 'Ubuntu','Conv_Ubuntu-M';
 }
+
 
 
 @mixin keyframes($name) {
@@ -301,6 +302,8 @@ body{
       .entry-container{
         background: none repeat scroll 0 0 #FFFFFF;
         .entry-content{
+          font-family: 'Source Sans Pro';
+
           padding: 0 70px 35px 145px;
           h1{
             font-size: 2em;
@@ -310,14 +313,22 @@ body{
             margin-bottom: 0.4em;
           }
           p{
-            font-size: 18px;
-            line-height: 36px;
-            color: #525252;
-
+            font-size: 1em;
+            font-weight: 300;
+            line-height: 1.7em;
+            margin: 25px 0;
+            color: #666;
           }
           textarea{
             height: 300px;
             resize:none;
+          }
+          ol, ul {
+            margin: 25px 0;
+            padding-left: 40px;
+            li{
+              margin-bottom: 0.6em;
+            }
           }
           .entry-meta{
             bottom: 20px;
@@ -330,9 +341,10 @@ body{
               color: #525252;
             }
             .share-container{
-              margin-top: 25px;
+              margin-top: 50px;
               text-align: right;
-              h4{
+              h5{
+                color:#585858;
                 margin: 0;
                 padding: 0 15px 0 15px;
                 display: inline-block;
@@ -683,6 +695,7 @@ body{
     
   }
 }
+
 
 @import "vars-typeplate";
 @import "typeplate";

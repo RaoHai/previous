@@ -6892,6 +6892,14 @@ a.th {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("/assets/fonts/SourceSansPro-Regular.eot");
+  src: local("☺"), url("/assets/fonts/SourceSansPro-Regular.otf.woff") format("woff"), url("/assets/fonts/SourceSansPro-Regular.ttf.woff") format("truetype"), url("/assets/fonts/SourceSansPro-Regular.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
