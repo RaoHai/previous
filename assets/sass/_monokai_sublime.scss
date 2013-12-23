@@ -1,121 +1,102 @@
 /*
-Description: Magula style for highligh.js
-Author: Ruslan Keba <rukeba@gmail.com>
-Website: http://rukeba.com/
-Version: 1.0
-Date: 2009-01-03
-Music: Aphex Twin / Xtal
+
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+
 */
 
 pre code {
-  display: block; padding: 0.5em;
-  background-color: #f4f4f4;
+  display: block;
+  padding: 0.5em;
+  background: #23241f;
 }
-
-pre code,
-pre .subst,
+pre .tag,
+pre code {
+  color: #f8f8f2;
+}
+pre .keyword,
+pre .function,
+pre .literal,
+pre .change,
+pre .winutils,
+pre .flow,
 pre .lisp .title,
-pre .clojure .built_in {
-  color: black;
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special {
+  color: #66d9ef;
 }
-
-pre .string,
+pre .variable,
+pre .params {
+  color: #fd9720;
+}
+pre .constant {
+  color: #66d9ef;
+}
 pre .title,
-pre .parent,
-pre .tag .value,
-pre .rules .value,
-pre .rules .value .number,
+pre .class .title,
+pre .css .class {
+  color: #a6e22e;
+}
+pre .attribute,
+pre .symbol,
+pre .symbol .string,
+pre .tag .title,
+pre .value,
+pre .css .tag {
+  color: #f92672;
+}
+pre .number,
 pre .preprocessor,
-pre .ruby .symbol,
-pre .ruby .symbol .string,
-pre .aggregate,
-pre .template_tag,
+pre .pragma,
+pre .regexp {
+  color: #ae81ff;
+}
+pre .tag .value,
+pre .string,
+pre .css .id,
+pre .subst,
+pre .haskell .type,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
 pre .django .variable,
 pre .smalltalk .class,
-pre .addition,
-pre .flow,
-pre .stream,
-pre .bash .variable,
-pre .apache .cbracket,
-pre .coffeescript .attribute {
-  color: #050;
-}
-
-pre .comment,
-pre .annotation,
-pre .template_comment,
-pre .diff .header,
-pre .chunk {
-  color: #777;
-}
-
-pre .number,
-pre .date,
-pre .regexp,
-pre .literal,
-pre .smalltalk .symbol,
-pre .smalltalk .char,
-pre .change,
-pre .tex .special {
-  color: #800;
-}
-
-pre .label,
-pre .javadoc,
-pre .ruby .string,
-pre .decorator,
-pre .filter .argument,
-pre .localvars,
-pre .array,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
 pre .attr_selector,
 pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt {
+  color: #e6db74;
+}
+pre .comment,
+pre .javadoc,
+pre .java .annotation,
+pre .python .decorator,
+pre .template_comment,
 pre .pi,
 pre .doctype,
 pre .deletion,
-pre .envvar,
 pre .shebang,
 pre .apache .sqbracket,
-pre .nginx .built_in,
-pre .tex .formula,
-pre .prompt,
-pre .clojure .attribute {
-  color: #00e;
+pre .tex .formula {
+  color: #75715e;
 }
-
-pre .keyword,
-pre .id,
-pre .phpdoc,
-pre .title,
-pre .built_in,
-pre .aggregate,
-pre .smalltalk .class,
-pre .winutils,
-pre .bash .variable,
-pre .apache .tag,
-pre .xml .tag,
-pre .tex .command,
-pre .request,
-pre .status {
-  font-weight: bold;
-  color: navy;
-}
-
-pre .nginx .built_in {
-  font-weight: normal;
-}
-
 pre .coffeescript .javascript,
 pre .javascript .xml,
-pre .tex .formula,
+pre .tex .formula {
+  opacity: 0.5;
+}
 pre .xml .javascript,
 pre .xml .vbscript,
 pre .xml .css,
 pre .xml .cdata {
   opacity: 0.5;
-}
-
-/* --- */
-pre .apache .tag {
-  font-weight: bold;
-  color: blue;
 }
