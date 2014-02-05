@@ -312,7 +312,7 @@ body{
             margin-bottom: 0.4em;
           }
           p{
-	    text-indent: 1.5em;
+	          text-indent: 1.5em;
             font-size: 1em;
             font-weight: 300;
             line-height: 1.7em;
@@ -659,7 +659,6 @@ body{
       margin:auto;
       text-align: center;
       padding: 40px 0;
-      width:1170px;
     }
   }
 
@@ -688,7 +687,7 @@ body{
     }
     .footer{
       .container{
-        width:940px;
+        width:1170px;
       }
     }
 
@@ -696,6 +695,41 @@ body{
   }
 }
 
+footer {
+  text-align: left;
+  a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 75em){
+  .footer{
+    .container{
+      width: 940px;
+    }
+  }
+}
+
+@media screen and (max-width: 48em){
+  body{
+   .main {
+      width: 100%;
+    }
+
+    .feature-post {
+      display: none;
+    }
+
+    .post .entry-container .entry-content {
+      padding: 0 30px 40px 45px;
+    }
+
+    .footer .container{
+      width: 100%;
+    }
+  }
+
+}
 
 @import "vars-typeplate";
 @import "typeplate";
