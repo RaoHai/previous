@@ -705,13 +705,16 @@ footer {
 @media screen and (max-width: 75em){
   .footer{
     .container{
-      width: 940px;
+      width: auto;
     }
   }
 }
 
 @media screen and (max-width: 48em){
   body{
+    header .top-banner .container {
+      width: auto;
+    }
    .main {
       width: 100%;
     }
@@ -726,6 +729,11 @@ footer {
 
     .footer .container{
       width: 100%;
+    }
+  }
+  .footer{
+    .container{
+      width: auto;
     }
   }
 
