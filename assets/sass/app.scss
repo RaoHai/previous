@@ -718,7 +718,9 @@ footer {
 
    .main {
       width: 100%;
-
+      aside.side-bar {
+        margin-left: 0;
+      }
       .post{
         padding: 8px;
         .post-title h2 {
