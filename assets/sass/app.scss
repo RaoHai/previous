@@ -715,9 +715,58 @@ footer {
     header .top-banner .container {
       width: auto;
     }
+
    .main {
       width: 100%;
+
+      .post{
+        padding: 8px;
+        .post-title h2 {
+          margin-left: 0;
+          float: left;
+        }
+        .entry-container {
+          .entry-content {
+            padding: 0 0 35px 0;
+          }
+        }
+        .post-meta {
+          position: relative;
+
+          ul >li {
+            float: left;
+            width: auto;
+            margin-right: 2px;
+          }
+          
+          .Month {
+            &:after {
+              content: '.'
+            }
+          }
+
+          .Day {
+            font-size: 14px;
+            margin-right: 5px;
+          }
+
+          .Year {
+            position: relative;
+            @include rotate(0);
+            right: auto;
+            top:auto;
+          }
+          .author {
+            margin:0 0 0 5px;
+            position: relative;
+            right: auto;
+            float: left;
+          }
+        }
+      }
+
     }
+  
 
     .feature-post {
       display: none;
@@ -742,3 +791,4 @@ footer {
 @import "vars-typeplate";
 @import "typeplate";
 @import "monokai_sublime";
+
