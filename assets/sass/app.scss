@@ -724,10 +724,15 @@ footer {
         .post-title h2 {
           margin-left: 0;
           float: left;
+          width: 100%;
+          font-size: 24px;
         }
         .entry-container {
           .entry-content {
             padding: 0 0 35px 0;
+            img {
+              margin-left: -1.5em;
+            }
           }
         }
         .post-meta {
