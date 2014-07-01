@@ -1,0 +1,334 @@
+@import "settings";
+@import "font";
+@import "font-awesome/scss/font-awesome";
+@import "foundation";
+@import "compass/css3";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+$hightlihgt-color: #78e0d7;
+$font-color: white;
+
+h1, h2, h3, h4, h5, h6 {
+  color: darken($font-color, 20%);
+}
+code {
+  font-family: Inconsolata,monospace;
+  font-size: 0.85em;
+  white-space: pre;
+  background: #f1f0ea;
+  border: 1px solid #dddbcc;
+  border-radius: 2px;
+  padding: 1px 3px;
+  color: #242628;
+}
+
+pre {
+  font-family: Inconsolata,monospace;
+  font-size: 0.85em;
+  white-space: pre;
+  background: #f1f0ea;
+  border: 1px solid #dddbcc;
+  border-radius: 2px;
+  padding: 1px 3px;
+  color: #242628;
+  code {
+    border: none;
+  }
+}
+ul, ul li ,ol li{
+  color: #636363;
+}
+html, body {
+  height: auto;
+}
+body {
+  position: relative; 
+  width: 100%;
+  background-color: black;
+  background-image: url('/assets/images/bg-dark.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.wrap {
+  position: relative;
+  background-color: black;
+}
+
+header {
+
+}
+
+ul, ul li {
+  list-style: none;
+  margin: 0;
+}
+
+.row {
+  max-width: 75em;
+}
+
+.site-head {
+  position: absolute;
+  color: $font-color;
+  text-align: center;
+  top: -380px;
+  width: 100%;
+
+  h1 , h2{
+    color: $font-color;
+  }
+  h1 {
+    font-size: 92px;
+    font-family: 'TitleFont';
+    margin: 5px 0;
+  }
+  h2 {
+    font-size: 19px;
+    opacity: 0.5;
+    
+
+  }
+
+}
+a {
+  color: $font-color;
+  &:hover {
+    color: $hightlihgt-color;
+  }
+}
+
+ul.profile-meta {
+  margin: 10px 0;
+  list-style: none;
+  text-align: left;
+
+  li {
+    line-height: 32px;
+  }
+
+  a{ 
+    color: darken($font-color, 40%);
+  }
+
+  i {
+    color: $hightlihgt-color;
+    margin-right: 10px;
+  }
+}
+
+ul.tags {
+  li {
+    font-size: 14px;
+    background-color: darken($font-color, 80%);
+    display: inline-block;
+    padding: 5px 8px;
+    margin: 3px;
+
+  }
+}
+
+.post-meta {
+  color: rgb(135, 135, 135);
+}
+
+.clf{
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden
+}
+
+
+main.content article.post, .profile, .tags-cloud , nav.pagination{
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+
+  .page-number {
+    color: darken($font-color, 40%);
+  }
+  h4.title {
+    color: darken($font-color, 40%);
+    font-size: 18px;
+    margin: -20px -20px 20px -20px;
+    padding: 5px;
+    border-bottom: 1px solid darken($font-color, 40%);
+  }
+
+  h2 {
+    a {
+      color: darken($font-color, 20%);
+      &:hover {
+        color: $hightlihgt-color;
+      }
+    }
+  }
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+main.content p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #636363;
+}
+article.main {
+  position: relative;
+  margin-top: -110px;
+}
+
+footer {
+  background-color: black;
+}
+
+main.content {
+  section.tags {
+    text-align: right;
+
+    a {
+      font-size: 14px;
+      background-color: #333333;
+      display: inline-block;
+      padding: 5px 8px;
+      margin: 3px;
+    }
+  }
+}
+
+.profile {
+  text-align: center;
+  position: relative;
+  
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    background: $font-color;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+    display: inline-block;
+    position: relative;
+    a {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+    img{
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      width: 92px;
+      height: 92px;
+      -webkit-border-radius: 500px;
+      border-radius: 500px
+    }
+
+    span.name {
+      display: block;
+      margin: 10px 0;
+      color: $font-color;
+      font-size: 20px;
+    }
+  }
+}
+ nav.pagination {
+  position: relative;
+  z-index: 9999;
+ }
+.site-footer {
+  background: none !important;
+  text-align: right;
+  height: 259px;
+  color: #ccc;
+  font-size: 14px;
+  position: relative;
+  margin-top: -50px;
+  .left-image {
+    position: relative;
+    height: 259px;
+    width: 289px;
+    z-index: 999;
+    background-color: black;
+    background-image: url('/assets/images/footer.png');
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  .line {
+    z-index: 0;
+    position: absolute;
+    bottom: 117px;
+    background-color: #585858;
+    width: 100%;
+    height: 1px;
+  }
+
+}
+
+@media only screen and (min-width: 1280px)
+{
+  .wrap {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 55px;
+  }
+  .site-head {
+    left: -150px;
+  }
+
+  .site-footer {
+
+    .inner {
+      width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 60px;
+      position: relative;
+      bottom: 70px;
+    }
+  }
+
+}
+
