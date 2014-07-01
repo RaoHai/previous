@@ -87,6 +87,7 @@ body {
 
 .wrap {
   position: relative;
+  z-index: 99;
   background-color: black;
 }
 
@@ -289,10 +290,36 @@ main.content {
     }
   }
 }
- nav.pagination {
+
+nav.pagination {
   position: relative;
   z-index: 9999;
- }
+
+
+}
+
+footer {
+  background-color: #191919;
+  a.fa {
+    font-size: 16px;
+    display: inline-block;
+    padding: 15px 30px;
+  }
+}
+
+.share {
+  h5 {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+    padding-right: 15px;
+    display: block;
+    width: 100%;
+    float: none;
+    line-height: 40px;
+    border-bottom: 1px solid #313131;
+  }
+}
 .site-footer {
   background: none !important;
   text-align: right;
@@ -300,6 +327,8 @@ main.content {
   color: #ccc;
   font-size: 14px;
   position: relative;
+  z-index: 0;
+
   margin-top: -50px;
   .left-image {
     position: relative;
@@ -349,6 +378,9 @@ main.content {
 }
 
 
+.nav .dropdown-toggle {
+  color: #999;
+}
 @import "vars-typeplate";
 @import "typeplate";
 @import "monokai_sublime";
