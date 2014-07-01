@@ -10357,6 +10357,11 @@ h1.post-title {
 }
 
 /* line 212, ../scss/app.scss */
+.post-content h4 {
+  color: #DBDBDB;
+}
+
+/* line 216, ../scss/app.scss */
 main.content p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -10366,14 +10371,14 @@ main.content p {
   font-weight: normal;
   color: #8d8d8d;
 }
-/* line 221, ../scss/app.scss */
+/* line 225, ../scss/app.scss */
 main.content p strong {
   color: #d8d8d8;
   font-size: 18px;
   line-height: 45px;
 }
 
-/* line 228, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 main.content code {
   padding: 0.5em;
   background: #23241f;
@@ -10381,22 +10386,22 @@ main.content code {
   border: none;
 }
 
-/* line 234, ../scss/app.scss */
+/* line 238, ../scss/app.scss */
 article.main {
   position: relative;
   margin-top: -110px;
 }
 
-/* line 239, ../scss/app.scss */
+/* line 243, ../scss/app.scss */
 footer {
   background-color: black;
 }
 
-/* line 244, ../scss/app.scss */
+/* line 248, ../scss/app.scss */
 main.content section.tags {
   text-align: right;
 }
-/* line 247, ../scss/app.scss */
+/* line 251, ../scss/app.scss */
 main.content section.tags a {
   font-size: 14px;
   background-color: #333333;
@@ -10405,12 +10410,12 @@ main.content section.tags a {
   margin: 3px;
 }
 
-/* line 257, ../scss/app.scss */
+/* line 261, ../scss/app.scss */
 .profile {
   text-align: center;
   position: relative;
 }
-/* line 262, ../scss/app.scss */
+/* line 266, ../scss/app.scss */
 .profile .avatar {
   width: 100px;
   height: 100px;
@@ -10420,13 +10425,13 @@ main.content section.tags a {
   display: inline-block;
   position: relative;
 }
-/* line 270, ../scss/app.scss */
+/* line 274, ../scss/app.scss */
 .profile .avatar a {
   display: inline-block;
   width: 100px;
   height: 100px;
 }
-/* line 275, ../scss/app.scss */
+/* line 279, ../scss/app.scss */
 .profile .avatar img {
   position: absolute;
   left: 4px;
@@ -10436,7 +10441,7 @@ main.content section.tags a {
   -webkit-border-radius: 500px;
   border-radius: 500px;
 }
-/* line 285, ../scss/app.scss */
+/* line 289, ../scss/app.scss */
 .profile .avatar span.name {
   display: block;
   margin: 10px 0;
@@ -10444,24 +10449,24 @@ main.content section.tags a {
   font-size: 20px;
 }
 
-/* line 294, ../scss/app.scss */
+/* line 298, ../scss/app.scss */
 nav.pagination {
   position: relative;
   z-index: 9999;
 }
 
-/* line 301, ../scss/app.scss */
+/* line 305, ../scss/app.scss */
 footer {
   background-color: #191919;
 }
-/* line 303, ../scss/app.scss */
+/* line 307, ../scss/app.scss */
 footer a.fa {
   font-size: 16px;
   display: inline-block;
   padding: 15px 30px;
 }
 
-/* line 311, ../scss/app.scss */
+/* line 315, ../scss/app.scss */
 .share h5 {
   margin: 0;
   color: #999;
@@ -10474,7 +10479,7 @@ footer a.fa {
   border-bottom: 1px solid #313131;
 }
 
-/* line 323, ../scss/app.scss */
+/* line 327, ../scss/app.scss */
 .site-footer {
   background: none !important;
   text-align: right;
@@ -10485,7 +10490,7 @@ footer a.fa {
   z-index: 0;
   margin-top: -50px;
 }
-/* line 333, ../scss/app.scss */
+/* line 337, ../scss/app.scss */
 .site-footer .left-image {
   position: relative;
   height: 259px;
@@ -10496,7 +10501,7 @@ footer a.fa {
   background-position: left;
   background-repeat: no-repeat;
 }
-/* line 343, ../scss/app.scss */
+/* line 347, ../scss/app.scss */
 .site-footer .line {
   z-index: 0;
   position: absolute;
@@ -10507,7 +10512,7 @@ footer a.fa {
 }
 
 @media only screen and (min-width: 1280px) {
-  /* line 356, ../scss/app.scss */
+  /* line 360, ../scss/app.scss */
   .wrap {
     width: 1280px;
     margin-left: auto;
@@ -10515,12 +10520,12 @@ footer a.fa {
     top: 55px;
   }
 
-  /* line 362, ../scss/app.scss */
+  /* line 366, ../scss/app.scss */
   .site-head {
     left: -150px;
   }
 
-  /* line 368, ../scss/app.scss */
+  /* line 372, ../scss/app.scss */
   .site-footer .inner {
     width: 1280px;
     margin-left: auto;
@@ -10530,7 +10535,7 @@ footer a.fa {
     bottom: 70px;
   }
 }
-/* line 381, ../scss/app.scss */
+/* line 385, ../scss/app.scss */
 .nav .dropdown-toggle {
   color: #999;
 }
