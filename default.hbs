@@ -87,7 +87,14 @@
     <div class="clf"></div>
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script>
+        $(function(){
+
+            hljs.initHighlightingOnLoad();
+        });
+    </script> 
 
 </body>
 </html>

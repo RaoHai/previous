@@ -1,5 +1,6 @@
 @import "settings";
 @import "font";
+@import "fonts";
 @import "font-awesome/scss/font-awesome";
 @import "foundation";
 @import "compass/css3";
@@ -63,11 +64,8 @@ pre {
   font-family: Inconsolata,monospace;
   font-size: 0.85em;
   white-space: pre;
-  background: #f1f0ea;
-  border: 1px solid #dddbcc;
-  border-radius: 2px;
-  padding: 1px 3px;
   color: #242628;
+  margin: 0 0 15px 0 ;
   code {
     border: none;
   }
@@ -204,15 +202,33 @@ main.content article.post, .profile, .tags-cloud , nav.pagination{
 
   background: rgba(255, 255, 255, 0.1);
 }
-
+h1.post-title {
+  color: white;
+  font-size: 3em;
+  margin: 0.5rem 0;
+}
 
 main.content p{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  line-height: 30px;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  color: #636363;
+  color: #8d8d8d;
+
+  strong {
+    color: #d8d8d8;
+    font-size: 18px;
+    line-height: 45px;
+  }
+}
+
+main.content code {
+  padding: 0.5em;
+  background: #23241f;
+  color:#f8f8f2;
+  border: none;
 }
 article.main {
   position: relative;
@@ -332,3 +348,7 @@ main.content {
 
 }
 
+
+@import "vars-typeplate";
+@import "typeplate";
+@import "monokai_sublime";
