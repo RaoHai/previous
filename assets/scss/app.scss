@@ -386,8 +386,16 @@ footer {
   color: #999;
 }
 
-.tag-algorithm {
+.post-template article.tag-algorithm {
   background-color: white !important;
+
+  a{
+    color: #272727;
+  }
+  h1.post-title , .post-content h4{
+    color: #4e4e4e;
+  }
+
 }
 @import "vars-typeplate";
 @import "typeplate";
