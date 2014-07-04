@@ -395,7 +395,13 @@ footer {
   h1.post-title , .post-content h4{
     color: #4e4e4e;
   }
-
+  .post-footer {
+    background-color: white;
+  }
+  .comment {
+    padding: 20px;
+    background-color: #191919;
+  }
 }
 @import "vars-typeplate";
 @import "typeplate";
