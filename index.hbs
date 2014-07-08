@@ -27,7 +27,11 @@
 
         </header>
         <section class="post-excerpt">
-            <p>{{excerpt}}&hellip;</p>
+            {{#isChinese html}}
+            <p>{{content characters="300"}}&hellip;</p>
+            {{else}}
+            <p>{{content words="100"}}&hellip;</p>
+            {{/isChinese}}
         </section>
 
         <section class="tags">{{tags separator=""}}</section>
