@@ -5,7 +5,7 @@
 /*globals jQuery, document */
 (function ($) {
     "use strict";
-
+    console.log(window.pageYOffset);
     $(document).ready(function(){
         $.getJSON('/tags', function (tags) {
           var _tags = tags.tags;
@@ -15,8 +15,13 @@
             _li.appendTo($('#tags-cloud'));
 
           }
-
         });
+
+        var hash = location.hash.substring(1);
+        var eleName = '*[name=' + hash + ']';
+        if (window.pageYOffset === 0 && $(eleName)) {
+          $("html,body").animate({scrollTop: $(eleName).offset().top - 100}, 1000);
+        }
 
         $(".post-content").fitVids();
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "stylesheets/app.css"}}" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  <div class="labs">
+      <div class="list-style">
+        <ul>
+          <li><i class="fa fa-th-large"></i></li>
+          <li><i class="fa fa-th-list"></i></li>
+        </ul>
+      </div>
+
+      <div class="contents">
+        {{#foreach labs}}
+        <article class="lab">
+          <div class="title">{{name}}</div>
+          <div class="content"><img src="/content/labs/{{name}}/index.png"></img></div>
+        </article>
+        {{/foreach}}
+      </div>
+  </div> 
+</body>
+</html>

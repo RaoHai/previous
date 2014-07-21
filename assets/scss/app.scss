@@ -75,6 +75,7 @@ ul, ul li ,ol li{
 }
 html, body {
   height: auto;
+  font-size: 16px;
 }
 body {
   position: relative; 
@@ -92,7 +93,15 @@ body {
 }
 
 header {
-
+  .flask {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 36px;
+    a {
+      color: $hightlihgt-color;
+    }
+  }
 }
 
 ul, ul li {
@@ -144,6 +153,7 @@ ul.profile-meta {
   }
 
   a{ 
+    font-size: 14px;
     color: darken($font-color, 40%);
   }
 
@@ -208,7 +218,19 @@ h1.post-title {
   font-size: 3em;
   margin: 0.5rem 0;
 }
+.post-excerpt {
+  padding-top: 10px;
+  img{
+    display: none;
+  }
+  img.title-image {
+    display: block;
+  }
 
+}
+h2.post-title {
+  margin-top: 0.3em;
+}
 .post-content h4 {
   color: #DBDBDB;
 }
@@ -357,6 +379,7 @@ footer {
 
 @media only screen and (min-width: 1280px)
 {
+
   .wrap {
     width: 1280px;
     margin-left: auto;
@@ -376,6 +399,29 @@ footer {
       padding: 0 60px;
       position: relative;
       bottom: 70px;
+    }
+  }
+
+  .labs {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+    .notifications {
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    .list-style {
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          color: white;
+          padding: 15px 5px;
+        }
+      }
     }
   }
 
@@ -401,6 +447,13 @@ footer {
   .comment {
     padding: 20px;
     background-color: #191919;
+  }
+}
+
+.post-excerpt {
+  h1, h2 {
+    font-size: 18px;
+    color: #C4C4C4;
   }
 }
 @import "vars-typeplate";

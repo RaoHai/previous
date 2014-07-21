@@ -23,15 +23,11 @@
     <article class="{{post_class}}">
         <header class="post-header">
             <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> </span>
-            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            <h2 class="post-title"><a href="{{url}}#content">{{{title}}}</a></h2>
 
         </header>
         <section class="post-excerpt">
-            {{#isChinese html}}
-            <p>{{content characters="300"}}&hellip;</p>
-            {{else}}
-            <p>{{content words="100"}}&hellip;</p>
-            {{/isChinese}}
+            <p>{{summary}}&hellip;</p>
         </section>
 
         <section class="tags">{{tags separator=""}}</section>
